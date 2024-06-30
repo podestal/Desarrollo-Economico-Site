@@ -22,11 +22,11 @@ const MainPage = () => {
 
   return (
     <>
-        {/* <header className="w-[100%] fixed bg-transparent top-0 left-0 z-10">
+        <header className="w-[100%] fixed bg-transparent top-0 left-0 z-10">
             <NavBar />
-        </header> */}
+        </header>
         <div className="relative h-[400vh]">
-            <div className="sticky top-0 max-h-screen w-full">
+            <div className="sticky top-0 max-h-screen w-full bg-sky-500">
                 <Hero />
             </div>
             <div className="relative min-h-screen w-full">

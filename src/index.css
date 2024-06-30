@@ -5,3 +5,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Waves Animation */
+
+.wave1 {
+  animation: animate 20s linear infinite;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+@keyframes animate {
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
+
+.wave2 {
+  animation: animate2 15s linear infinite;
+  z-index: 1000;
+  opacity: 0.5;
+}
+
+@keyframes animate2 {
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
+
+.wave3 {
+  animation: animate3 25s linear infinite;
+  z-index: 3;
+  opacity: 0.3;
+}
+
+@keyframes animate3 {
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: 5000px;
+  }
+}
+
+.wave3 {
+  animation: animate3 10s linear infinite;
+  z-index: 2;
+  opacity: 0.3;
+}
+
+@keyframes animate3 {
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: 2000px;
+  }
+}
