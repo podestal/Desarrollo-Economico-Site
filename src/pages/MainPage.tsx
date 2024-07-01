@@ -1,13 +1,28 @@
-import { useScroll } from "framer-motion"
+import { useMotionValueEvent, useScroll } from "framer-motion"
 import Lenis from "lenis"
-import { useRef, useEffect } from "react"
+import { useRef, useEffect, useState } from "react"
 import Hero from "../components/landing-page/Hero"
 import Caleta from "../components/landing-page/Caleta"
 import Bosque from "../components/landing-page/Bosque"
 import Faro from "../components/landing-page/Faro"
 import NavBar from "../components/landing-page/NavBar"
+import Hospital from "../components/landing-page/Hospital"
 
 const MainPage = () => {
+
+    const {scrollY} = useScroll()
+    const [navFixed, setNavFixed] = useState(true)
+
+    useMotionValueEvent(scrollY, 'change', latest => {
+        if (latest >= 10) {
+            setNavFixed(false)
+        }
+        if (latest < 10) {
+            setNavFixed(true)
+        }         
+    })
+        
+        
 
     useEffect(() => {
         const lenis = new Lenis()
@@ -22,24 +37,26 @@ const MainPage = () => {
 
   return (
     <>
-        <header className="w-[100%] fixed bg-transparent top-0 left-0 z-10">
-            <NavBar />
-        </header>
-        <div className="relative h-[400vh]">
-            <div className="sticky top-0 max-h-screen w-full bg-sky-500">
+        <NavBar 
+            navFixed={navFixed}
+        />
+        <div className="relative h-[600vh]">
+        {/* {!absNav && <NavBar />} */}
+        
+            <div className="sticky top-0 min-h-screen w-full bg-sky-500">
                 <Hero />
             </div>
             <div className="relative min-h-screen w-full">
                 <Caleta />
             </div>
             <div className="relative h-screen w-full">
-                <Bosque />
-            </div>
-            <div className="sticky top-0 h-screen w-full">
                 <Faro />
             </div>
             <div className="sticky top-0 h-screen w-full">
-                <Caleta />
+                <Bosque />
+            </div>
+            <div className="relative h-screen w-full">
+                <Hospital />
                 {/* Servicios */}
             </div>
             <div className="relative h-screen w-full">

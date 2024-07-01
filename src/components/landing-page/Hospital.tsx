@@ -1,9 +1,7 @@
-import { useScroll, useTransform } from "framer-motion"
-import { useRef } from "react"
-import {motion} from 'framer-motion'
-import landingImg from '../../assets/imgs/caleta-landing.png'
+import {motion, useScroll} from 'framer-motion'
+import { useRef } from 'react'
 
-const Caleta = () => {
+const Hospital = () => {
 
     const container = useRef(null)
     const { scrollYProgress } = useScroll({
@@ -11,14 +9,16 @@ const Caleta = () => {
         offset: ['0.5 1', '1 1']
     })
 
-    // const y = useTransform(scrollYProgress, [0, 1], [-300, 300])
-
   return (
-    <div  className="relative h-screen bg-white">
+    <div  className="relative h-screen bg-red-700">
         <motion.div 
-            style={{scale: scrollYProgress, opacity: scrollYProgress}} 
+            // style={{scale: scrollYProgress, opacity: scrollYProgress}} 
             // style={{y}}
             ref={container}
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{rotate: "180deg"}}
+            transition={{duration: 1}}
             className="flex justify-center items-start h-screen mx-auto relative"
         >
             <div className="w-[1180px] flex flex-col justify-center items-center gap-6 relative z-10 mt-12">
@@ -29,15 +29,13 @@ const Caleta = () => {
             {/* <div className="relative z-10">
                
             </div> */}
-            <div className='w-[420px] h-[400px] bg-sky-500 rounded-[100%] absolute z-1 top-[-10%] translate-x-[150%] blur-[120px] '/>
-            <div className='w-[420px] h-[300px] bg-sky-400 rounded-[100%] absolute z-1 top-[70%] translate-y-[-120%] blur-[160px] '/>
-            <div className='w-[420px] h-[300px] bg-sky-400 rounded-[100%] absolute z-1 top-[20%] translate-x-[-150%] blur-[100px] '/>
-            <div style={{backgroundImage: `url(${landingImg})`}} className=" h-[380px] bg-center bg-cover rounded-xl absolute bottom-0 w-full"></div>
+            {/* <div className='w-[420px] h-[400px] bg-sky-500 rounded-[100%] absolute z-1 top-[-10%] translate-x-[150%] blur-[120px] '/> */}
+            {/* <div className='w-[420px] h-[300px] bg-sky-400 rounded-[100%] absolute z-1 top-[70%] translate-y-[-120%] blur-[160px] '/> */}
+            {/* <div className='w-[420px] h-[300px] bg-sky-400 rounded-[100%] absolute z-1 top-[20%] translate-x-[-150%] blur-[100px] '/> */}
+            {/* <div style={{backgroundImage: `url(${landingImg})`}} className=" h-[380px] bg-center bg-cover rounded-xl absolute bottom-0 w-full"></div> */}
         </motion.div>
     </div>
   )
 }
 
-export default Caleta
-
-
+export default Hospital
