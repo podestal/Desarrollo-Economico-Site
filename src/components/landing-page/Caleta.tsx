@@ -1,4 +1,4 @@
-import { useScroll, useTransform } from "framer-motion"
+import { useScroll } from "framer-motion"
 import { useRef } from "react"
 import {motion} from 'framer-motion'
 import landingImg from '../../assets/imgs/caleta-landing.png'

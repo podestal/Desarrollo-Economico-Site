@@ -1,6 +1,6 @@
 import { useMotionValueEvent, useScroll } from "framer-motion"
 import Lenis from "lenis"
-import { useRef, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import Hero from "../components/landing-page/Hero"
 import Caleta from "../components/landing-page/Caleta"
 import Bosque from "../components/landing-page/Bosque"

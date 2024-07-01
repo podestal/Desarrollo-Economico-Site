@@ -1,13 +1,9 @@
-import {motion, useScroll} from 'framer-motion'
+import {motion} from 'framer-motion'
 import { useRef } from 'react'
 
 const Hospital = () => {
 
     const container = useRef(null)
-    const { scrollYProgress } = useScroll({
-        target: container,
-        offset: ['0.5 1', '1 1']
-    })
 
   return (
     <div  className="relative h-screen bg-red-700">
