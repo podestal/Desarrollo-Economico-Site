@@ -14,10 +14,10 @@ const MainPage = () => {
     const [navFixed, setNavFixed] = useState(true)
 
     useMotionValueEvent(scrollY, 'change', latest => {
-        if (latest >= 10) {
+        if (latest >= 1) {
             setNavFixed(false)
         }
-        if (latest < 10) {
+        if (latest < 1) {
             setNavFixed(true)
         }         
     })

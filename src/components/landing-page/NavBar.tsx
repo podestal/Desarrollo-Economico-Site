@@ -20,7 +20,7 @@ const NavBar = ({navFixed}: Props) => {
 
   return (
     <motion.header 
-        className={` w-[100%] ${navFixed ? 'fixed bg-transparent' : 'sticky bg-sky-500'} top-0 left-0 z-50`}
+        className={` w-[100%] ${navFixed ? 'fixed bg-transparent' : 'sticky backdrop-blur-sm bg-white/30'} top-0 left-0 z-50  `}
         variants={{
             visible: {y:0},
             hidden: {y:'-100%'},
