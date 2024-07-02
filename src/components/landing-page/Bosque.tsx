@@ -13,13 +13,13 @@ const Bosque = () => {
                 <motion.div 
                     initial={{opacity: 0, translateY: 100}}
                     whileInView={{opacity: 1, translateY: 0}}
-                    transition={{duration: 1.6}}
-                    className="w-[1180px] flex flex-col justify-center items-center gap-10 relative z-20 mt-12 text-slate-200">
+                    transition={{duration: 2}}
+                    className="w-[1180px] flex flex-col justify-center items-center gap-10 relative z-20 mt-12 text-slate-100">
                     <div className='flex flex-col flex-1 gap-10 items-start justify-start mx-10'>
-                        <h2 className="text-9xl font-montserrat font-bold text-center">Bosque de Piedras</h2>
-                        <p className="text-xl font-poppins text-center leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae repellendus ducimus, id itaque quod provident ea quibusdam minima ipsa, cumque inventore esse rem quaerat commodi iste illum quo omnis.</p>
+                        <h2 className="text-9xl font-montserrat font-semibold text-center">Bosque de Piedras</h2>
+                        <p className="text-xl text-slate-300 font-poppins text-center leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae repellendus ducimus, id itaque quod provident ea quibusdam minima ipsa, cumque inventore esse rem quaerat commodi iste illum quo omnis.</p>
                     </div>
-                    <p className="text-xl text-slate-200 font-palanquin bg-sky-500 px-6 py-2 rounded-3xl cursor-pointer hover:bg-sky-400 hover:text-slate-300">Conozca más</p>
+                    <p className="text-xl text-slate-100 font-palanquin bg-sky-500 px-6 py-2 rounded-3xl cursor-pointer hover:bg-sky-400 hover:text-slate-300">Conozca más</p>
                 </motion.div>
 
             <div className='h-screen w-full bg-center bg-cover bg-black absolute z-10 top-0 opacity-45'/>

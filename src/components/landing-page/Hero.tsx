@@ -43,7 +43,7 @@ const Hero = () => {
     }, [xtranslation, height])
 
   return (
-    <div className="h-[100vh] mx-auto relative overflow-hidden">
+    <div className="h-screen mx-auto relative overflow-hidden">
         <div className="w-[1180px] flex justify-center mx-auto gap-12">
             <div className='w-full h-[100vh] flex flex-col justify-center items-start relative z-10'>
                 <p className='text-[130px] font-palanquin w-full leading-[7.5rem] text-slate-200 font-bold'><span className='drop-shadow-lg bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent'>Islay</span> te dá la bienvenida </p>

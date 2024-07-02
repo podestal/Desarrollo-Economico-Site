@@ -1,10 +1,12 @@
 import MainPage from "./pages/MainPage"
+import Index from "./maps-advisor/Index"
 
 const App = () => {
 
   return (
     <>
-      <MainPage />
+      {/* <MainPage /> */}
+      <Index />
     </>
   )
 }

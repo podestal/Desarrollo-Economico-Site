@@ -20,7 +20,7 @@ const NavBar = ({navFixed}: Props) => {
 
   return (
     <motion.header 
-        className={` w-[100%] ${navFixed ? 'fixed bg-transparent' : 'sticky backdrop-blur-sm bg-white/30'} top-0 left-0 z-50  `}
+        className={` w-[100%] ${navFixed ? 'fixed bg-transparent' : 'sticky backdrop-blur-sm bg-slate-950/60'} top-0 left-0 z-50  `}
         variants={{
             visible: {y:0},
             hidden: {y:'-100%'},
@@ -32,19 +32,19 @@ const NavBar = ({navFixed}: Props) => {
             <div>
                 <ul className=" max-lg:hidden flex text-center gap-12">
                     <li className="nav__item">
-                        <a href="#home" className="text-slate-200 hover:text-slate-300 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold">Inicio</a>
+                        <a href="#home" className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Inicio</a>
                     </li>
                     <li className="nav__item">
-                        <a href="#about" className="text-slate-200 hover:text-slate-300 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold">Servicios</a>
+                        <a href="#about" className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Servicios</a>
                     </li>
                     <li className="nav__item">
-                        <a href="#popular" className="text-slate-200 hover:text-slate-300 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold">Emergencia</a>
+                        <a href="#popular" className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Emergencia</a>
                     </li>
                     <li className="nav__item">
-                        <a href="#eventos" className="text-slate-200 hover:text-slate-300 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold">Eventos</a>
+                        <a href="#eventos" className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Eventos</a>
                     </li>
                     <li className="nav__item">
-                        <a href="#turismo" className="text-slate-200 hover:text-slate-300 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold">Turismo</a>
+                        <a href="#turismo" className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Turismo</a>
                     </li>
                 </ul>
             </div>

@@ -7,6 +7,7 @@ import Bosque from "../components/landing-page/Bosque"
 import Faro from "../components/landing-page/Faro"
 import NavBar from "../components/landing-page/NavBar"
 import Hospital from "../components/landing-page/Hospital"
+import Services from "../components/landing-page/Services"
 
 const MainPage = () => {
 
@@ -40,7 +41,7 @@ const MainPage = () => {
         <NavBar 
             navFixed={navFixed}
         />
-        <div className="relative h-[1000vh]">
+        <div className="relative h-[800vh]">
         {/* {!absNav && <NavBar />} */}
         
             <div className="sticky top-0 min-h-screen w-full bg-sky-500">
@@ -55,13 +56,14 @@ const MainPage = () => {
             <div className="sticky top-0  min-h-screen w-full">
                 <Bosque />
             </div>
+            {/* <div className="sticky top-0 h-screen w-full">
+                <Hospital />
+            </div>
             <div className="sticky top-0 h-screen w-full">
                 <Hospital />
-                {/* Servicios */}
-            </div>
-            <div className="sticky top-0 ative h-screen w-full">
-                <Hospital />
-                {/* Servicios */}
+            </div> */}
+            <div className="sticky top-0 h-screen w-full">
+                <Services />
             </div>
             {/* <div className="relative h-screen w-full">
                 <Hospital />

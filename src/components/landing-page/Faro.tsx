@@ -18,7 +18,7 @@ const Faro = () => {
                             initial={{opacity: 0, translateX: -100}}
                             whileInView={{opacity: 1, translateX: 0}}
                             transition={{duration: 1.6}}
-                            className="text-9xl font-montserrat">El Muelle</motion.h2>
+                            className="text-9xl font-montserrat font-semibold">El Muelle</motion.h2>
                         <motion.p 
                             initial={{opacity: 0, translateX: -100}}
                             whileInView={{opacity: 1, translateX: 0}}
@@ -29,7 +29,7 @@ const Faro = () => {
                         initial={{opacity: 0, translateX: -100}}
                         whileInView={{opacity: 1, translateX: 0}}
                         transition={{duration: 1.7}}
-                        className="text-xl text-slate-200 font-palanquin bg-sky-500 px-6 py-2 rounded-3xl cursor-pointer hover:bg-sky-400 hover:text-slate-300">Conozca más
+                        className="text-xl text-slate-100 font-palanquin bg-sky-500 px-6 py-2 rounded-3xl cursor-pointer hover:bg-sky-400 hover:text-slate-300">Conozca más
                     </motion.p>
                 </div>
                 <motion.div 
