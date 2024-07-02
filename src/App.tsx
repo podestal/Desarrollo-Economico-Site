@@ -5,8 +5,10 @@ const App = () => {
 
   return (
     <>
-      {/* <MainPage /> */}
-      <Index />
+      <MainPage />
+      {/* <div className="w-full min-h-screen">
+        <Index />
+      </div> */}
     </>
   )
 }

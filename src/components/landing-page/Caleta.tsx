@@ -8,7 +8,7 @@ const Caleta = () => {
     const container = useRef(null)
     const { scrollYProgress } = useScroll({
         target: container,
-        offset: ['0.5 1', '1 1']
+        offset: ['0.5 1.5', '1 1']
     })
 
     // const y = useTransform(scrollYProgress, [0, 1], [-300, 300])

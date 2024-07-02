@@ -6,7 +6,7 @@ import Caleta from "../components/landing-page/Caleta"
 import Bosque from "../components/landing-page/Bosque"
 import Faro from "../components/landing-page/Faro"
 import NavBar from "../components/landing-page/NavBar"
-import Hospital from "../components/landing-page/Hospital"
+// import Hospital from "../components/landing-page/Hospital"
 import Services from "../components/landing-page/Services"
 
 const MainPage = () => {
