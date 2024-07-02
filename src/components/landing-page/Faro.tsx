@@ -4,11 +4,12 @@ import muelle from '../../assets/imgs/muelle-landing.png'
 const Faro = () => {
 
   return (
-    <div className="relative h-screen bg-sky-400">
-        <div  className="relative h-screen bg-white">
+    <div className="relative bg-white">
+        {/* <div className="pt-[50vh]"/> */}
+        <div  className="relative">
             <div 
 
-                className="flex justify-center items-center h-screen mx-auto relative gap-12"
+                className="flex justify-center items-start mx-auto relative gap-12 h-[200vh]"
             >
 
                 <div className="w-[1180px] flex flex-col justify-center items-center gap-10 relative z-10 mt-12">
@@ -35,8 +36,8 @@ const Faro = () => {
                     initial={{opacity: 0, translateX: 100}}
                     whileInView={{opacity: 1, translateX: 0}}
                     transition={{duration: 1.6}}
-                    className='relative w-full h-screen flex justify-center'>
-                    <div style={{backgroundImage: `url(${muelle})`}} className=" h-[580px] bg-center bg-cover rounded-xl absolute bottom-0 right-0 w-full"></div>
+                    className='relative w-full h-screen flex justify-center items-center m-10'>
+                    <div style={{backgroundImage: `url(${muelle})`}} className=" h-[580px] bg-center bg-cover rounded-xl w-full muelle-animate"></div>
                 </motion.div>
                 {/* <div className="relative z-10">
                 

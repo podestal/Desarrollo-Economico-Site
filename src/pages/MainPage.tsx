@@ -14,10 +14,10 @@ const MainPage = () => {
     const [navFixed, setNavFixed] = useState(true)
 
     useMotionValueEvent(scrollY, 'change', latest => {
-        if (latest >= 1) {
+        if (latest >= 15) {
             setNavFixed(false)
         }
-        if (latest < 1) {
+        if (latest < 15) {
             setNavFixed(true)
         }         
     })
@@ -40,29 +40,36 @@ const MainPage = () => {
         <NavBar 
             navFixed={navFixed}
         />
-        <div className="relative h-[600vh]">
+        <div className="relative h-[1000vh]">
         {/* {!absNav && <NavBar />} */}
         
             <div className="sticky top-0 min-h-screen w-full bg-sky-500">
                 <Hero />
             </div>
-            <div className="relative min-h-screen w-full">
+            <div className="sticky top-0  min-h-screen w-full">
                 <Caleta />
             </div>
-            <div className="relative h-screen w-full">
+            <div className="sticky top-0 min-h-screen w-full">
                 <Faro />
             </div>
-            <div className="sticky top-0 h-screen w-full">
+            <div className="sticky top-0  min-h-screen w-full">
                 <Bosque />
             </div>
-            <div className="relative h-screen w-full">
+            <div className="sticky top-0 h-screen w-full">
                 <Hospital />
                 {/* Servicios */}
             </div>
-            <div className="relative h-screen w-full">
-                <Bosque />
-                {/* Contacto */}
+            <div className="sticky top-0 ative h-screen w-full">
+                <Hospital />
+                {/* Servicios */}
             </div>
+            {/* <div className="relative h-screen w-full">
+                <Hospital />
+            </div> */}
+            {/* <div className="relative h-screen w-full">
+                <Bosque />
+            </div> */}
+            {/* Contacto */}
             {/* ...Sections */}
         </div>
     </>

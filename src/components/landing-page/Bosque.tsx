@@ -4,15 +4,15 @@ import bosque from '../../assets/imgs/piedras-landing.png'
 const Bosque = () => {
 
   return (
-    <div className="relative h-screen">
+    <div className="relative h-[160vh]">
         <div  className="relative h-screen bg-white">
             <div 
                 className="flex justify-center items-center h-screen mx-auto relative gap-12"
             >
 
                 <motion.div 
-                    initial={{opacity: 0, translateX: -100}}
-                    whileInView={{opacity: 1, translateX: 0}}
+                    initial={{opacity: 0, translateY: 100}}
+                    whileInView={{opacity: 1, translateY: 0}}
                     transition={{duration: 1.6}}
                     className="w-[1180px] flex flex-col justify-center items-center gap-10 relative z-20 mt-12 text-slate-200">
                     <div className='flex flex-col flex-1 gap-10 items-start justify-start mx-10'>

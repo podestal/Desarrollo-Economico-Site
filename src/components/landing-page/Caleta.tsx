@@ -14,7 +14,7 @@ const Caleta = () => {
     // const y = useTransform(scrollYProgress, [0, 1], [-300, 300])
 
   return (
-    <div  className="relative h-screen bg-white">
+    <div  className="relative h-[150vh] bg-white">
         <motion.div 
             style={{scale: scrollYProgress, opacity: scrollYProgress}} 
             // style={{y}}
@@ -29,9 +29,9 @@ const Caleta = () => {
             {/* <div className="relative z-10">
                
             </div> */}
-            <div className='w-[420px] h-[400px] bg-sky-500 rounded-[100%] absolute z-1 top-[-10%] translate-x-[150%] blur-[120px] '/>
-            <div className='w-[420px] h-[300px] bg-sky-400 rounded-[100%] absolute z-1 top-[70%] translate-y-[-120%] blur-[160px] '/>
-            <div className='w-[420px] h-[300px] bg-sky-400 rounded-[100%] absolute z-1 top-[20%] translate-x-[-150%] blur-[100px] '/>
+            {/* <div className='w-[420px] h-[400px] bg-sky-500 rounded-[100%] absolute z-1 top-[-10%] translate-x-[150%] blur-[120px] '/> */}
+            {/* <div className='w-[420px] h-[300px] bg-sky-400 rounded-[100%] absolute z-1 top-[70%] translate-y-[-120%] blur-[160px] '/> */}
+            {/* <div className='w-[420px] h-[300px] bg-sky-400 rounded-[100%] absolute z-1 top-[20%] translate-x-[-150%] blur-[100px] '/> */}
             <div style={{backgroundImage: `url(${landingImg})`}} className=" h-[380px] bg-center bg-cover rounded-xl absolute bottom-0 w-full"></div>
         </motion.div>
     </div>

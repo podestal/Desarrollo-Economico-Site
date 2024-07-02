@@ -46,7 +46,7 @@ const Hero = () => {
     <div className="h-[100vh] mx-auto relative overflow-hidden">
         <div className="w-[1180px] flex justify-center mx-auto gap-12">
             <div className='w-full h-[100vh] flex flex-col justify-center items-start relative z-10'>
-                <p className='text-[130px] font-palanquin w-full leading-[7.5rem] text-slate-200 font-bold'><span className='drop-shadow-lg bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent'>Islay</span> le dá la bienvenida </p>
+                <p className='text-[130px] font-palanquin w-full leading-[7.5rem] text-slate-200 font-bold'><span className='drop-shadow-lg bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent'>Islay</span> te dá la bienvenida </p>
                 <p className='w-[70%] text-slate-300 text-2xl leading-10 my-12 rounded-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum officia praesentium</p>
             </div>
             <motion.div ref={ref} className='flex flex-col gap-12 px-20 items-end relative z-10' style={{y: xtranslation}}>
