@@ -6,8 +6,10 @@ import Caleta from "../components/landing-page/Caleta"
 import Bosque from "../components/landing-page/Bosque"
 import Faro from "../components/landing-page/Faro"
 import NavBar from "../components/landing-page/NavBar"
-// import Hospital from "../components/landing-page/Hospital"
 import Services from "../components/landing-page/Services"
+import Emergency from "../components/landing-page/Emergency"
+import Footer from "../components/landing-page/Footer"
+
 
 const MainPage = () => {
 
@@ -37,11 +39,11 @@ const MainPage = () => {
     }, [])
 
   return (
-    <>
+    <div className="w-full">
         <NavBar 
             navFixed={navFixed}
         />
-        <div className="relative h-[800vh]">
+        <div className="relative h-[900vh]">
         {/* {!absNav && <NavBar />} */}
         
             <div className="sticky top-0 min-h-screen w-full bg-sky-500">
@@ -56,15 +58,16 @@ const MainPage = () => {
             <div className="sticky top-0  min-h-screen w-full">
                 <Bosque />
             </div>
-            {/* <div className="sticky top-0 h-screen w-full">
-                <Hospital />
-            </div>
-            <div className="sticky top-0 h-screen w-full">
-                <Hospital />
-            </div> */}
-            <div className="sticky top-0 h-screen w-full">
+
+            <div className="sticky top-0 min-h-screen w-full">
                 <Services />
             </div>
+            <div className="sticky top-0 min-h-screen w-full">
+                <Emergency />
+            </div>
+            {/* <div className="sticky top-0  min-h-screen w-full">
+                <h2>gsdasd</h2>
+            </div> */}
             {/* <div className="relative h-screen w-full">
                 <Hospital />
             </div> */}
@@ -73,8 +76,10 @@ const MainPage = () => {
             </div> */}
             {/* Contacto */}
             {/* ...Sections */}
+            
         </div>
-    </>
+        <Footer />
+    </div>
   )
 }
 

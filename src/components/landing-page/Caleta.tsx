@@ -14,7 +14,7 @@ const Caleta = () => {
     // const y = useTransform(scrollYProgress, [0, 1], [-300, 300])
 
   return (
-    <div  className="relative h-[150vh] bg-white">
+    <div  className="w-full relative h-[150vh] bg-white">
         <motion.div 
             style={{scale: scrollYProgress, opacity: scrollYProgress}} 
             // style={{y}}

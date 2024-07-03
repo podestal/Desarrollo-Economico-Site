@@ -93,3 +93,21 @@
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+
+@layer utilities {
+  .card-wrapper {
+    @apply relative overflow-hidden rounded-2xl bg-blue-50
+  }
+
+  .card-wrapper::before {
+    background: conic-gradient(
+      rgba(37, 99, 235, 0.4) 0deg,
+      rgba(7, 89, 133, 0.4) 0deg,
+      transparent 80deg
+    );
+    @apply absolute left-[-25%] top-[-25%] h-[150%] w-[150%] animate-border-spin content-[''];
+  }
+  .card-content {
+    @apply absolute left-[1px] top-[1px] h-[calc(100%-3px)] w-[calc(100%-3px)] rounded-2xl bg-white;
+  }
+}

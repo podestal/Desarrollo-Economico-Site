@@ -6,7 +6,7 @@ const Map = () => {
 
     
   return (
-    <div className="h-screen w-full p-12">
+    <div className="h-[500px] w-full p-12">
         <GoogleMap 
             defaultZoom={18} 
             defaultCenter={position}

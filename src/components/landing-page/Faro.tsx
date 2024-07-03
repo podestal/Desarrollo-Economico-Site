@@ -18,7 +18,7 @@ const Faro = () => {
                             initial={{opacity: 0, translateX: -100}}
                             whileInView={{opacity: 1, translateX: 0}}
                             transition={{duration: 1.6}}
-                            className="text-9xl font-montserrat font-semibold">El Muelle</motion.h2>
+                            className="text-9xl font-montserrat font-semibold">Islas Albizuri</motion.h2>
                         <motion.p 
                             initial={{opacity: 0, translateX: -100}}
                             whileInView={{opacity: 1, translateX: 0}}
