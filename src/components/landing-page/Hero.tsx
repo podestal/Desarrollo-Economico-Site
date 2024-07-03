@@ -45,10 +45,10 @@ const Hero = () => {
   return (
     <div className="w-full h-screen bg-blue-500">
         <div className="max-lg:max-w-[1180px] flex justify-center mx-auto gap-12">
-          <div className='w-full h-[100vh] flex flex-col justify-center max-lg:items-center items-start  relative z-10 px-4'>
-          <div className='max-lg:text-8xl flex max-lg:flex-col justify-start items-center'>
-            <h2 className='drop-shadow-lg bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent max-lg:font-bold'>Islay</h2> 
-            <h2 className='text-[130px] max-lg:text-center max-lg:text-8xl font-palanquin w-full leading-[7.5rem] text-slate-200 font-bold'>te dá la bienvenida </h2>
+          <div className='w-full h-[100vh] flex flex-col justify-center max-lg:items-center items-start relative z-10 px-4'>
+          <div className='max-lg:text-8xl flex flex-col justify-start max-lg:items-center items-start'>
+            <h2 className='lg:text-[130px] drop-shadow-lg lg:hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold'>Islay</h2> 
+            <h2 className='lg:text-[130px] max-lg:text-center font-palanquin w-full leading-[7.5rem] text-slate-200 font-bold'><span className=' drop-shadow-lg max-lg:hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold'>Islay </span>te dá la bienvenida </h2>
           </div>
                 <p className='w-[70%] max-lg:text-center text-slate-300 text-2xl leading-10 my-12 rounded-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum officia praesentium</p>
             </div>

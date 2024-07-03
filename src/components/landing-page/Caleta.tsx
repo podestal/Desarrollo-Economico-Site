@@ -21,10 +21,10 @@ const Caleta = () => {
             ref={container}
             className="flex justify-center items-start h-screen mx-auto relative"
         >
-            <div id="turismo" className="w-[1180px] flex flex-col justify-center items-center gap-6 relative z-10 mt-12">
-                <h2 className="text-9xl font-montserrat font-semibold">Centeno</h2>
-                <p className="text-xl text-center font-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae repellendus ducimus, id itaque quod provident ea quibusdam minima ipsa, cumque inventore esse rem quaerat commodi iste illum quo omnis.</p>
-                <p className="text-xl text-slate-100 font-palanquin bg-sky-500 px-6 py-2 rounded-3xl cursor-pointer hover:bg-sky-400 hover:text-slate-300">Conozca más</p>
+            <div id="turismo" className="w-[1180px] flex flex-col justify-center items-center gap-8 max-lg:gap-10 relative z-10 mt-12 px-6">
+                <h2 className="text-9xl max-lg:text-8xl font-montserrat font-semibold">Centeno</h2>
+                <p className="text-lg lg:text-xl text-center font-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae repellendus ducimus, id itaque quod provident ea quibusdam minima ipsa, cumque inventore esse rem quaerat commodi iste illum quo omnis.</p>
+                <p className="text-lg text-slate-100 font-palanquin bg-sky-500 px-6 py-2 rounded-3xl cursor-pointer hover:bg-sky-400 hover:text-slate-300">Conozca más</p>
             </div>
             {/* <div className="relative z-10">
                
