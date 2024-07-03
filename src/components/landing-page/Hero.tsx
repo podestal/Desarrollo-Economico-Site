@@ -44,12 +44,15 @@ const Hero = () => {
 
   return (
     <div className="w-full h-screen bg-blue-500">
-        <div className="w-[1180px] flex justify-center mx-auto gap-12">
-          <div className='w-full h-[100vh] flex flex-col justify-center items-start relative z-10'>
-                <p className='text-[130px] font-palanquin w-full leading-[7.5rem] text-slate-200 font-bold'><span className='drop-shadow-lg bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent'>Islay</span> te dá la bienvenida </p>
-                <p className='w-[70%] text-slate-300 text-2xl leading-10 my-12 rounded-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum officia praesentium</p>
+        <div className="max-lg:max-w-[1180px] flex justify-center mx-auto gap-12">
+          <div className='w-full h-[100vh] flex flex-col justify-center max-lg:items-center items-start  relative z-10 px-4'>
+          <div className='max-lg:text-8xl flex max-lg:flex-col justify-start items-center'>
+            <h2 className='drop-shadow-lg bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent max-lg:font-bold'>Islay</h2> 
+            <h2 className='text-[130px] max-lg:text-center max-lg:text-8xl font-palanquin w-full leading-[7.5rem] text-slate-200 font-bold'>te dá la bienvenida </h2>
+          </div>
+                <p className='w-[70%] max-lg:text-center text-slate-300 text-2xl leading-10 my-12 rounded-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum officia praesentium</p>
             </div>
-            <motion.div ref={ref} className='flex flex-col gap-12 px-20 items-end relative z-10' style={{y: xtranslation}}>
+            <motion.div ref={ref} className='flex flex-col gap-12 px-20 items-end max-lg:hidden relative z-10' style={{y: xtranslation}}>
                 {[...imgs ].map(img => <motion.div key={img} style={{backgroundImage: `url(${img})`}} className='w-[180px] h-[180px] bg-center bg-cover rounded-xl'></motion.div>)}
             </motion.div>
             {/*  */}
