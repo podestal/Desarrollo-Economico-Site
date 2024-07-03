@@ -96,7 +96,7 @@
 
 @layer utilities {
   .card-wrapper {
-    @apply relative overflow-hidden rounded-2xl bg-blue-50
+    @apply relative overflow-hidden rounded-2xl bg-blue-50 w-[100%] h-[400px]
   }
 
   .card-wrapper::before {
@@ -108,6 +108,6 @@
     @apply absolute left-[-25%] top-[-25%] h-[150%] w-[150%] animate-border-spin content-[''];
   }
   .card-content {
-    @apply absolute left-[1px] top-[1px] h-[calc(100%-3px)] w-[calc(100%-3px)] rounded-2xl bg-white;
+    @apply absolute left-[1px] top-[1px] h-[calc(100%-5px)] w-[calc(100%-5px)] rounded-2xl bg-white;
   }
 }

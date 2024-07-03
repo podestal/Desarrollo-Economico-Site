@@ -11,8 +11,7 @@ const Faro = () => {
 
                 className="flex justify-center items-start mx-auto relative gap-12 h-[200vh]"
             >
-
-                <div className="w-[1180px] flex flex-col justify-center items-center gap-10 relative z-10 mt-12">
+                <div className="w-[50%] flex flex-col justify-center items-center gap-10 relative z-10 mt-12">
                     <div className='flex flex-col gap-10 items-start justify-start mx-10'>
                         <motion.h2 
                             initial={{opacity: 0, translateX: -100}}

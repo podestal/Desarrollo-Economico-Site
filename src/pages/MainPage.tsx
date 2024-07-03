@@ -62,7 +62,7 @@ const MainPage = () => {
             <div className="sticky top-0 min-h-screen w-full">
                 <Services />
             </div>
-            <div className="sticky top-0 min-h-screen w-full">
+            <div className="relative min-h-screen w-full">
                 <Emergency />
             </div>
             {/* <div className="sticky top-0  min-h-screen w-full">

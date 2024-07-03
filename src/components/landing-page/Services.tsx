@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 
 const Services = () => {
   return (
-    <div className="w-full h-[200vh] bg-white">
+    <section id="services" className="w-full h-[200vh] bg-white">
         <motion.div 
             initial={{opacity: 0, translateY: 300}}
             whileInView={{opacity: 1, translateY: 0}}
@@ -12,7 +12,7 @@ const Services = () => {
             <h2 className="text-9xl font-palanquin relative ">Explora</h2>
             <Index />
         </motion.div>
-    </div>
+    </section>
   )
 }
 
