@@ -2,11 +2,7 @@ import {motion, useMotionValueEvent, useScroll} from 'framer-motion'
 import { useState } from 'react'
 import {HashLink as Link} from 'react-router-hash-link'
 
-interface Props {
-    navFixed: boolean
-}
-
-const NavBar = ({navFixed}: Props) => {
+const NavBar = () => {
 
     const { scrollY } = useScroll()
     const [hidden, setHidden] = useState(false)
@@ -34,7 +30,7 @@ const NavBar = ({navFixed}: Props) => {
             <div>
                 <ul className=" max-lg:hidden flex text-center gap-12">
                     <li className="nav__item">
-                        <Link to='#home'>
+                        <Link to='/#home'>
                             <p className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Inicio</p>
                         </Link>
                     </li>

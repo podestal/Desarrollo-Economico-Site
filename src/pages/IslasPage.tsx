@@ -1,6 +1,6 @@
 const IslasPage = () => {
   return (
-    <div>IslasPage</div>
+    <div className="sticky top-0 min-h-screen">IslasPage</div>
   )
 }
 

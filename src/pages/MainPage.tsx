@@ -6,7 +6,6 @@ import Bosque from "../components/landing-page/Bosque"
 import Faro from "../components/landing-page/Faro"
 import Services from "../components/landing-page/Services"
 import Emergency from "../components/landing-page/Emergency"
-import Footer from "../components/landing-page/Footer"
 
 
 const MainPage = () => {
@@ -54,9 +53,6 @@ const MainPage = () => {
                 <Emergency />
             </div>
         </>
-        <div className="relative">
-            <Footer />
-        </div>
     </>
   )
 }

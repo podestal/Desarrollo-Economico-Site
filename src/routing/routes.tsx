@@ -15,7 +15,7 @@ const router = createBrowserRouter([
             { index: true, element: <MainPage /> },
             { path: 'islas', element: <IslasPage /> },
             { path: 'bosque', element: <BosquePage /> },
-            { path: 'CaletaPage', element: <CaletaPage /> },
+            { path: 'caleta', element: <CaletaPage /> },
         ]
     }
 ])

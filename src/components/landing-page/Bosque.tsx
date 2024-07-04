@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom'
 import bosque from '../../assets/imgs/piedras-landing.png'
 
 const Bosque = () => {
@@ -19,7 +20,9 @@ const Bosque = () => {
                         <h2 className="text-8xl lg:text-9xl font-montserrat font-semibold text-center">Bosque de Piedras</h2>
                         <p className="text-lg lg:text-xl text-slate-300 font-poppins text-center leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae repellendus ducimus, id itaque quod provident ea quibusdam minima ipsa, cumque inventore esse rem quaerat commodi iste illum quo omnis.</p>
                     </div>
-                    <p className="text-xl text-slate-100 font-palanquin bg-sky-500 px-6 py-2 rounded-3xl cursor-pointer hover:bg-sky-400 hover:text-slate-300">Conozca más</p>
+                    <Link to='bosque'>
+                        <p className="text-xl text-slate-100 font-palanquin bg-sky-500 px-6 py-2 rounded-3xl cursor-pointer hover:bg-sky-400 hover:text-slate-300">Conozca más</p>
+                    </Link>
                 </motion.div>
 
             <div className='h-screen w-full bg-center bg-cover bg-black absolute z-10 top-0 opacity-45'/>

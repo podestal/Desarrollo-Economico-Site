@@ -1,6 +1,6 @@
 const BosquePage = () => {
   return (
-    <div>BosquePage</div>
+    <div className="sticky top-0 min-h-screen">BosquePage</div>
   )
 }
 

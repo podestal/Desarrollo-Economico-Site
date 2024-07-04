@@ -1,6 +1,6 @@
 const CaletaPage = () => {
   return (
-    <div>CaletaPage</div>
+    <div className="sticky top-0 min-h-screen">CaletaPage</div>
   )
 }
 
