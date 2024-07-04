@@ -9,6 +9,7 @@ import NavBar from "../components/landing-page/NavBar"
 import Services from "../components/landing-page/Services"
 import Emergency from "../components/landing-page/Emergency"
 import Footer from "../components/landing-page/Footer"
+import Main from "../components/landing-page/Main"
 
 
 const MainPage = () => {
@@ -43,7 +44,7 @@ const MainPage = () => {
         {/* <NavBar 
             navFixed={navFixed}
         /> */}
-        <div className="min-h-[100vh]">
+        <div className="">
         {/* {!absNav && <NavBar />} */}
         
             {/* <div className="sticky top-0 left-0 min-h-screen w-full bg-sky-500">
@@ -74,17 +75,18 @@ const MainPage = () => {
             </div> */}
             {/* Contacto */}
             {/* ...Sections */}
-            <div className="sticky top-0 left-0 min-h-screen w-full bg-sky-500">
+            <div className="sticky top-0 bg-blue-500 min-h-screen ">
                 <Hero />
-            </div>
-            <div className="sticky top-0  min-h-screen w-full">
-                <Caleta />
+                {/* <Main /> */}
             </div>
             <div className="sticky top-0 min-h-screen w-full">
                 <Faro />
             </div>
-            <div className="relative h-screen w-full">
+            <div className="sticky top-0  h-screen w-full">
                 <Bosque />
+            </div>
+            <div className="sticky top-0  min-h-screen w-full">
+                <Caleta />
             </div>
             <div className="sticky top-0  min-h-screen w-full">
                 <Services />

@@ -43,23 +43,35 @@ const Hero = () => {
     }, [xtranslation, height])
 
   return (
-    <div className="w-full h-screen bg-blue-500">
-        <div className="max-lg:max-w-[1180px] flex justify-center mx-auto gap-12">
-          <div className='w-full h-[100vh] flex flex-col justify-center max-lg:items-center items-start relative z-10 px-4'>
-          <div className='max-lg:text-8xl flex flex-col justify-start max-lg:items-center items-start'>
+    <div className="w-full h-screen">
+      <div className="max-lg:max-w-[1180px] flex justify-center mx-auto gap-12"> 
+        <div className='h-screen w-full flex flex-col justify-center max-lg:items-center items-start relative z-10 px-4 mx-10'>
+          <div className='max-lg:text-8xl flex flex-col justify-start max-lg:items-center items-start '>
             <h2 className='lg:text-[130px] drop-shadow-lg lg:hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold'>Islay</h2> 
-            <h2 className='lg:text-[130px] max-lg:text-center font-palanquin w-full leading-[7.5rem] text-slate-200 font-bold'><span className=' drop-shadow-lg max-lg:hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold'>Islay </span>te dá la bienvenida </h2>
+            <h2 className='lg:text-[130px] max-lg:text-center font-palanquin w-full leading-[7.5rem] text-slate-200 font-bold'><span className=' drop-shadow-lg max-lg:hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold '>Islay </span>te dá la bienvenida </h2>
           </div>
-                <p className='w-[70%] max-lg:text-center text-slate-300 text-2xl leading-10 my-12 rounded-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum officia praesentium</p>
+          <p className='w-[70%] max-lg:text-center text-slate-300 text-2xl leading-10 my-12 rounded-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum officia praesentium</p>
+        </div>
+        <motion.div ref={ref} className='flex flex-col gap-12 px-20 items-end max-lg:hidden relative z-10' style={{y: xtranslation}}>
+            {[...imgs ].map(img => <motion.div key={img} style={{backgroundImage: `url(${img})`}} className='w-[180px] h-[180px] bg-center bg-cover rounded-xl'></motion.div>)}
+        </motion.div>
+      </div>
+        {/* <div className="max-lg:max-w-[1180px] flex justify-center mx-auto gap-12"> */} 
+          {/* <div className='w-full h-[100vh] flex flex-col justify-center max-lg:items-center items-start relative z-10 px-4'>
+            <div className='max-lg:text-8xl flex flex-col justify-start max-lg:items-center items-start '>
+              <h2 className='lg:text-[130px] drop-shadow-lg lg:hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold'>Islay</h2> 
+              <h2 className='lg:text-[130px] max-lg:text-center font-palanquin w-full leading-[7.5rem] text-slate-200 font-bold'><span className=' drop-shadow-lg max-lg:hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold '>Islay </span>te dá la bienvenida </h2>
             </div>
-            <motion.div ref={ref} className='flex flex-col gap-12 px-20 items-end max-lg:hidden relative z-10' style={{y: xtranslation}}>
+                <p className='w-[70%] max-lg:text-center text-slate-300 text-2xl leading-10 my-12 rounded-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum officia praesentium</p>
+            </div> */}
+            {/* <motion.div ref={ref} className='flex flex-col gap-12 px-20 items-end max-lg:hidden relative z-10' style={{y: xtranslation}}>
                 {[...imgs ].map(img => <motion.div key={img} style={{backgroundImage: `url(${img})`}} className='w-[180px] h-[180px] bg-center bg-cover rounded-xl'></motion.div>)}
-            </motion.div>
+            </motion.div> */}
             {/*  */}
             {/*  */}
             {/* <div className='circlePosition w-[520px] h-[400px] bg-sky-300 rounded-[100%] absolute z-1 translate-x-[-80%] translate-y-[-50%] blur-[190px] '/> */}
             {/* <div className='circlePosition w-[720px] h-[400px] bg-sky-400 rounded-[100%] absolute z-1 translate-x-[50%] translate-y-[70%] blur-[210px] '/> */}
-        </div>
+        {/* </div> */}
         {/* <div className='w-[150px] h-[150px] absolute top-0 cube'>
 
         </div>
