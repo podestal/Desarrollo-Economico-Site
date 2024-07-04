@@ -4,7 +4,7 @@ import { Icon } from "@tremor/react"
 const Emergency = () => {
   return (
     <section id="emergency" className="w-[100%] bg-white min-h-screen flex flex-col justify-start items-center gap-12 p-12 overflow-hidden">
-        <h2 className="max-lg:text-center text-7xl lg:text-8xl font-montserrat text-sate-900 w-full">Servicios de Emergencia</h2>
+        <h2 className="text-7xl lg:text-8xl font-montserrat text-sate-900 w-full text-center">Servicios de Emergencia</h2>
         <div className={`w-[85%] grid grid-cols-1 xl:grid-cols-3 gap-20 text-slate-900`}>
             <div className="card-wrapper">
                 <div className="card-content py-8 px-4 flex flex-col justify-center items-center gap-6 rounded-3xl">

@@ -5,7 +5,7 @@ const Bosque = () => {
 
   return (
     <div className="relative h-[160vh]">
-        <div  className="relative h-screen bg-white">
+        <div  className="relative bg-white">
             <div 
                 className="flex justify-center items-center h-screen mx-auto relative gap-12"
             >

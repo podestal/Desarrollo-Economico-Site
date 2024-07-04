@@ -77,18 +77,17 @@ const MainPage = () => {
             {/* ...Sections */}
             <div className="sticky top-0 bg-blue-500 min-h-screen ">
                 <Hero />
-                {/* <Main /> */}
             </div>
-            <div className="sticky top-0 min-h-screen w-full">
+            <div className="relative min-h-screen w-full">
                 <Faro />
-            </div>
-            <div className="sticky top-0  h-screen w-full">
-                <Bosque />
             </div>
             <div className="sticky top-0  min-h-screen w-full">
                 <Caleta />
             </div>
-            <div className="sticky top-0  min-h-screen w-full">
+            <div className="sticky top-0 h-[200vh] w-full">
+                <Bosque />
+            </div>
+            <div className="sticky top-0 h-[200vh] w-full">
                 <Services />
             </div>
             <div className="relative min-h-screen w-full">
