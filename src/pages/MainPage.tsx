@@ -39,14 +39,14 @@ const MainPage = () => {
     }, [])
 
   return (
-    <div className="w-full">
-        <NavBar 
+    <div className="w-[100%]">
+        {/* <NavBar 
             navFixed={navFixed}
-        />
-        <div className="relative h-[900vh]">
+        /> */}
+        <div className="min-h-[100vh]">
         {/* {!absNav && <NavBar />} */}
         
-            <div className="sticky top-0 min-h-screen w-full bg-sky-500">
+            {/* <div className="sticky top-0 left-0 min-h-screen w-full bg-sky-500">
                 <Hero />
             </div>
             <div className="sticky top-0  min-h-screen w-full">
@@ -55,16 +55,14 @@ const MainPage = () => {
             <div className="sticky top-0 min-h-screen w-full">
                 <Faro />
             </div>
-            <div className="sticky top-0  min-h-screen w-full">
-                <Bosque />
+            <div className="sticky top-0 min-h-screen w-full">
+                <Services />
             </div>
 
             <div className="sticky top-0 min-h-screen w-full">
                 <Services />
             </div>
-            <div className="relative min-h-screen w-full">
-                <Emergency />
-            </div>
+             */}
             {/* <div className="sticky top-0  min-h-screen w-full">
                 <h2>gsdasd</h2>
             </div> */}
@@ -76,9 +74,29 @@ const MainPage = () => {
             </div> */}
             {/* Contacto */}
             {/* ...Sections */}
-            
+            <div className="sticky top-0 left-0 min-h-screen w-full bg-sky-500">
+                <Hero />
+            </div>
+            <div className="sticky top-0  min-h-screen w-full">
+                <Caleta />
+            </div>
+            <div className="sticky top-0 min-h-screen w-full">
+                <Faro />
+            </div>
+            <div className="relative h-screen w-full">
+                <Bosque />
+            </div>
+            <div className="sticky top-0  min-h-screen w-full">
+                <Services />
+            </div>
+            <div className="relative min-h-screen w-full">
+                <Emergency />
+            </div>
+            <div className="relative">
+                <Footer />
+            </div>
         </div>
-        <Footer />
+        
     </div>
   )
 }

@@ -3,11 +3,11 @@ import { Icon } from "@tremor/react"
 
 const Emergency = () => {
   return (
-    <section id="emergency" className="bg-white min-h-screen flex flex-col justify-start items-center gap-12 p-12">
-        <h2 className="text-8xl font-montserrat text-sate-900">Servicios de Emergencia</h2>
+    <section id="emergency" className="w-[100%] bg-white min-h-screen flex flex-col justify-start items-center gap-12 p-12 overflow-hidden">
+        <h2 className="max-lg:text-center text-7xl lg:text-8xl font-montserrat text-sate-900 w-full">Servicios de Emergencia</h2>
         <div className={`w-[85%] grid grid-cols-1 xl:grid-cols-3 gap-20 text-slate-900`}>
             <div className="card-wrapper">
-                <div className="card-content py-8 px-4 flex flex-col justify-center items-center gap-6 rounded-3xl  ">
+                <div className="card-content py-8 px-4 flex flex-col justify-center items-center gap-6 rounded-3xl">
                     <h3 className="text-6xl font-palanquin mb-6  font-bold">Policía</h3>
                     <div className="w-full flex justify-start items-center gap-6">
                         <Icon icon={RiHome3Fill} size="xl"/>

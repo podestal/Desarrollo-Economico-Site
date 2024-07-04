@@ -3,7 +3,7 @@ import { Icon } from "@tremor/react"
 
 const Footer = () => {
   return (
-    <div className=" w-full relative z-100 min-h-[150px] bg-slate-950 mt-10 text-slate-200 text-md grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-4 py-6 px-4">
+    <div className=" w-full realtive z-100 min-h-[150px] bg-slate-950 mt-10 text-slate-200 text-md grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-4 py-6 px-4">
         <div className="flex justify-center">
             <div className="flex flex-col gap-4 lg:items-start items-center justify-start">
                 <h2 className="text-4xl">LOGO</h2>

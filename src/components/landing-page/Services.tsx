@@ -9,7 +9,7 @@ const Services = () => {
             whileInView={{opacity: 1, translateY: 0}}
             transition={{duration: 1.4}}
             className="flex flex-col justify-center items-center">
-            <h2 className="text-9xl font-palanquin relative ">Explora</h2>
+            <h2 className="text-8xl lg:text-9xl font-palanquin relative ">Explora</h2>
             <Index />
         </motion.div>
     </section>

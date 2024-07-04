@@ -4,20 +4,19 @@ import muelle from '../../assets/imgs/muelle-landing.png'
 const Faro = () => {
 
   return (
-    <div className="relative bg-white">
+    <div className=" bg-white">
         {/* <div className="pt-[50vh]"/> */}
-        <div  className="relative">
+        <div  className="">
             <div 
-
                 className="flex justify-center items-start mx-auto relative gap-12 h-[200vh]"
             >
-                <div className="w-[50%] flex flex-col justify-center items-center gap-10 relative z-10 mt-12">
-                    <div className='flex flex-col gap-10 items-start justify-start mx-10'>
+                <div className="w-[100%] flex flex-col justify-center items-center gap-10 relative z-10 mt-12">
+                    <div className='w-full flex flex-col gap-10 items-center justify-start px-12'>
                         <motion.h2 
                             initial={{opacity: 0, translateX: -100}}
                             whileInView={{opacity: 1, translateX: 0}}
                             transition={{duration: 1.6}}
-                            className="text-9xl font-montserrat font-semibold">Islas Albizuri</motion.h2>
+                            className="text-8xl lg:text-9xl font-montserrat font-semibold">Islas Albizuri</motion.h2>
                         <motion.p 
                             initial={{opacity: 0, translateX: -100}}
                             whileInView={{opacity: 1, translateX: 0}}
