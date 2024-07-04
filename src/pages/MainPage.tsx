@@ -9,7 +9,6 @@ import NavBar from "../components/landing-page/NavBar"
 import Services from "../components/landing-page/Services"
 import Emergency from "../components/landing-page/Emergency"
 import Footer from "../components/landing-page/Footer"
-import Main from "../components/landing-page/Main"
 
 
 const MainPage = () => {
@@ -40,65 +39,29 @@ const MainPage = () => {
     }, [])
 
   return (
-    <div className="w-[100%]">
-        {/* <NavBar 
-            navFixed={navFixed}
-        /> */}
-        <div className="">
-        {/* {!absNav && <NavBar />} */}
-        
-            {/* <div className="sticky top-0 left-0 min-h-screen w-full bg-sky-500">
-                <Hero />
-            </div>
-            <div className="sticky top-0  min-h-screen w-full">
-                <Caleta />
-            </div>
-            <div className="sticky top-0 min-h-screen w-full">
-                <Faro />
-            </div>
-            <div className="sticky top-0 min-h-screen w-full">
-                <Services />
-            </div>
-
-            <div className="sticky top-0 min-h-screen w-full">
-                <Services />
-            </div>
-             */}
-            {/* <div className="sticky top-0  min-h-screen w-full">
-                <h2>gsdasd</h2>
-            </div> */}
-            {/* <div className="relative h-screen w-full">
-                <Hospital />
-            </div> */}
-            {/* <div className="relative h-screen w-full">
-                <Bosque />
-            </div> */}
-            {/* Contacto */}
-            {/* ...Sections */}
-            <div className="sticky top-0 bg-blue-500 min-h-screen ">
-                <Hero />
-            </div>
-            <div className="relative min-h-screen w-full">
-                <Faro />
-            </div>
-            <div className="sticky top-0  min-h-screen w-full">
-                <Caleta />
-            </div>
-            <div className="sticky top-0 h-[200vh] w-full">
-                <Bosque />
-            </div>
-            <div className="sticky top-0 h-[200vh] w-full">
-                <Services />
-            </div>
-            <div className="relative min-h-screen w-full">
-                <Emergency />
-            </div>
-            <div className="relative">
-                <Footer />
-            </div>
+    <>
+        <div className="sticky top-0 bg-blue-500 min-h-screen ">
+            <Hero />
         </div>
-        
-    </div>
+        <div className="relative min-h-screen w-full">
+            <Faro />
+        </div>
+        <div className="sticky top-0  min-h-screen w-full">
+            <Caleta />
+        </div>
+        <div className="sticky top-0 h-[200vh] w-full">
+            <Bosque />
+        </div>
+        <div className="sticky top-0 h-[200vh] w-full">
+            <Services />
+        </div>
+        <div className="relative min-h-screen w-full">
+            <Emergency />
+        </div>
+        <div className="relative">
+            <Footer />
+        </div>
+    </>
   )
 }
 
