@@ -1,5 +1,6 @@
 import {motion, useMotionValueEvent, useScroll} from 'framer-motion'
 import { useState } from 'react'
+import {HashLink as Link} from 'react-router-hash-link'
 
 interface Props {
     navFixed: boolean
@@ -20,7 +21,8 @@ const NavBar = ({navFixed}: Props) => {
 
   return (
     <motion.header 
-        className={` w-full ${navFixed ? 'fixed bg-transparent' : 'sticky backdrop-blur-sm bg-slate-950/60'} top-0 left-0 z-50  `}
+        // className={` w-full ${navFixed ? 'fixed bg-transparent' : 'sticky backdrop-blur-sm bg-slate-950/60'} top-0 left-0 z-50  `}
+        className={` w-full fixed backdrop-blur-sm bg-slate-950/60 top-0 left-0 z-50  `}
         variants={{
             visible: {y:0},
             hidden: {y:'-100%'},
@@ -32,19 +34,24 @@ const NavBar = ({navFixed}: Props) => {
             <div>
                 <ul className=" max-lg:hidden flex text-center gap-12">
                     <li className="nav__item">
-                        <a href="#home" className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Inicio</a>
+                        <Link to='#home'>
+                            <p className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Inicio</p>
+                        </Link>
                     </li>
                     <li className="nav__item">
-                        <a href="#services" className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Servicios</a>
+                        <Link to='#services'>
+                            <p className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Servicios</p>
+                        </Link>
                     </li>
                     <li className="nav__item">
-                        <a href="#emergency" className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Emergencia</a>
+                        <Link to='#emergency'>
+                            <p className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Emergencia</p>
+                        </Link>
                     </li>
-                    {/* <li className="nav__item">
-                        <a href="#eventos" className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Eventos</a>
-                    </li> */}
                     <li className="nav__item">
-                        <a href="#turismo" className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Turismo</a>
+                        <Link to='#turismo'>
+                            <p className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Turismo</p>
+                        </Link>
                     </li>
                 </ul>
             </div>

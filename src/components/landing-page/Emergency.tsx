@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 const Emergency = () => {
   return (
-    <section id="emergency" className="w-[100%] bg-white min-h-screen flex flex-col justify-start items-center gap-12 p-12 overflow-hidden">
+    <section className="w-[100%] bg-white min-h-screen flex flex-col justify-start items-center gap-12 p-12 overflow-hidden">
         <motion.h2 
             initial={{opacity: 0, translateY: 100}}
             whileInView={{opacity: 1, translateY: 0}}
