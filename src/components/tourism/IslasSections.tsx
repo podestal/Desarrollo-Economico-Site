@@ -16,8 +16,8 @@ const IslasSections = ({ islaData }: Props) => {
 <section className='sticky top-0 h-[100vh] w-full'>
         <div style={{backgroundImage: `url(${islaData.img})`}} className=" h-screen bg-center bg-cover bg-no-repeat absolute top-0 right-0 w-full"></div>
         {!info && <motion.div 
-            initial={{ "--x": "100%", positionY: 100 }}
-            animate={{ "--x": "-100%", positionY: 100 }}
+            // initial={{ "--x": "100%", positionY: 100 }}
+            // animate={{ "--x": "-100%", positionY: 100 }}
             whileTap={{ scale: 0.90 }}
             transition={{
                 duration: 1,
@@ -42,7 +42,7 @@ const IslasSections = ({ islaData }: Props) => {
                 <motion.div 
                     whileHover={{ scale: 1.2 }}
                     className='mx-auto'>
-                    <Icon className='relative z-100' icon={RiArrowDownDoubleLine} color='white' size='xl'/>
+                    <Icon className='relative z-100' icon={RiArrowDownDoubleLine} variant="simple" size='xl'/>
                 </motion.div>
             </div>
         </motion.div>}

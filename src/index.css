@@ -6,6 +6,13 @@
 @tailwind components;
 @tailwind utilities;
 
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* Waves Animation */
 
 .wave1 {
@@ -112,26 +119,28 @@
   }
 }
 
-.radial-gradient {
-  background: radial-gradient(
-          circle at 50% 0%,
-          rgba(var(--radial-gradient-background), 0.05) 0%,
-          transparent 60%
-      )
-      rgba(var(--solid-color-background), 1);
+.pulse:before,
+.pulse:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.45;
 }
 
-.linear-mask {
-  mask-image: linear-gradient(
-    -75deg,
-    white calc(var(--x) + 20%),
-    transparent 30%,
-    white 100%
-  );
-  -webkit-mask-image: linear-gradient(
-    -75deg,
-    white calc(var(--x) + 20%),
-    transparent 2%,
-    white 100%
-  );
+.pulse:before {
+  animation: pulse 2.4s ease-out infinite;
+}
+
+.pulse:after {
+  animation: pulse 2.4s 1s ease-out infinite;
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(1.6);
+  }
 }

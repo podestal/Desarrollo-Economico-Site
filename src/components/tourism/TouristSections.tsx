@@ -4,12 +4,7 @@ import { Icon } from '@tremor/react'
 import { Caleta } from "../../data/data"
 import { useState } from 'react'
 
-interface Props {
-    caletaData: Caleta
-}
-
-const TouristSections = ({ caletaData }: Props) => {
-
+const TouristSections = ({ caletaData }) => {
     const [info, setInfo] = useState(false)
     
   return (
@@ -42,7 +37,7 @@ const TouristSections = ({ caletaData }: Props) => {
                 <motion.div 
                     whileHover={{ scale: 1.2 }}
                     className='mx-auto'>
-                    <Icon className='relative z-100' icon={RiArrowDownDoubleLine} color='white' size='xl'/>
+                    <Icon className='relative z-100' icon={RiArrowDownDoubleLine} color='white' variant="solid" size='xl'/>
                 </motion.div>
             </div>
         </motion.div>}
