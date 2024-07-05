@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion'
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 import bosque from '../../assets/imgs/piedras-landing.png'
 
 const Bosque = () => {
@@ -20,7 +20,8 @@ const Bosque = () => {
                         <h2 className="text-6xl 2xl:text-[150px] md:text-8xl lg:text-9xl font-montserrat font-semibold text-center">Bosque de Piedras</h2>
                         <p className="2xl:text-2xl lg:text-lg 2xl:leading-[2.5rem] text-md text-slate-300 font-poppins text-center leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae repellendus ducimus, id itaque quod provident ea quibusdam minima ipsa, cumque inventore esse rem quaerat commodi iste illum quo omnis.</p>
                     </div>
-                    <Link to='bosque'>
+                    {/* to='/islas/#islas-page' */}
+                    <Link to='/bosque/#bosques-page'>
                         <p className="2xl:text-2xl text-lg text-slate-100 font-palanquin bg-sky-500 2xl:px-12 2xl:py-4 px-6 py-2 rounded-3xl cursor-pointer hover:bg-sky-400 hover:text-slate-300">Conozca más</p>
                     </Link>
                 </motion.div>

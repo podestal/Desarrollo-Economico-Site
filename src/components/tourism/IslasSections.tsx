@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion'
-import { RiArrowDownDoubleLine } from '@remixicon/react'
-import { Icon } from '@tremor/react'
 import { Isla } from "../../data/data"
 import { useState } from 'react'
 
@@ -15,37 +13,13 @@ const IslasSections = ({ islaData }: Props) => {
   return (
 <section className='sticky top-0 h-[100vh] w-full'>
         <div style={{backgroundImage: `url(${islaData.img})`}} className=" h-screen bg-center bg-cover bg-no-repeat absolute top-0 right-0 w-full"></div>
-        {!info && <motion.div 
-            // initial={{ "--x": "100%", positionY: 100 }}
-            // animate={{ "--x": "-100%", positionY: 100 }}
-            whileTap={{ scale: 0.90 }}
-            transition={{
-                duration: 1,
-                repeat: Infinity,
-                repeatType: "loop",
-                repeatDelay: 0.2,
-                type: "spring",
-                stiffness: 40,
-                damping: 180,
-                mass: 0.8,
-                scale: {
-                type: "spring",
-                stiffness: 10,
-                damping: 5,
-                mass: 0.1,
-                },
-            }}
+        {!info && <div 
             onClick={() => setInfo(true)}
-            className='flex justify-center items-start cursor-pointer linear-mask w-[250px] mx-auto'>
-            <div className='flex flex-col mt-20'>
-                <h2 className='text-4xl text-slate-50 relative z-100 font-montserrat'>Info</h2>
-                <motion.div 
-                    whileHover={{ scale: 1.2 }}
-                    className='mx-auto'>
-                    <Icon className='relative z-100' icon={RiArrowDownDoubleLine} variant="simple" size='xl'/>
-                </motion.div>
+            className='flex justify-center items-start cursor-pointer w-[250px] mx-auto'>
+            <div className='relative flex flex-col mt-20 pulse z-50'>
+                <h2 className='text-2xl font-bold text-blue-500 p-4 relative z-50 font-montserrat'>Info</h2>
             </div>
-        </motion.div>}
+        </div>}
         {info && 
         <div className='relative w-full h-full'>
             <motion.div 

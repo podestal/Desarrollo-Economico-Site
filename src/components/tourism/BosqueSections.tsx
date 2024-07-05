@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion'
-import { RiArrowDownDoubleLine } from '@remixicon/react'
-import { Icon } from '@tremor/react'
 import { Bosque } from "../../data/data"
-import { CSSProperties, useState } from 'react'
+import { useState } from 'react'
 
 interface Props {
     bosqueData: Bosque
@@ -19,7 +17,7 @@ const BosqueSections = ({ bosqueData }: Props) => {
             onClick={() => setInfo(true)}
             className='flex justify-center items-start cursor-pointer w-[250px] mx-auto'>
             <div className='relative flex flex-col mt-20 pulse z-50'>
-                <h2 className='text-3xl font-bold text-blue-500 p-4 relative z-50 font-montserrat'>Info</h2>
+                <h2 className='text-2xl font-bold text-blue-500 p-4 relative z-50 font-montserrat'>Info</h2>
             </div>
         </div>}
         {info && 
