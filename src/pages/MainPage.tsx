@@ -23,33 +23,50 @@ const MainPage = () => {
 
   return (
     <>
-        <>
-            <div id="home" />
-            <div className="sticky top-0 bg-blue-500 h-[150vh] ">
-                <Hero />
-            </div>
-        </>
-        <>
-            <div id="turismo"/>
-            <div className="relative min-h-screen w-full">
-                <Faro />
-            </div>
-        </>
-        <div className="sticky top-0  min-h-screen w-full">
-            <Caleta />
+        <div className="relative h-screen">
+            <>
+                <div id="home" />
+                <div className="sticky top-0 bg-blue-500  h-screen">
+                    <Hero />
+                </div>
+            </>
         </div>
-        <div className="sticky top-0 h-[200vh] w-full">
-            <Bosque />
+        <div className="relative h-[450vh]">
+            <>
+                <div id="caleta"/>
+                <div className="sticky top-0 h-[150vh] w-full">
+                    <Caleta />
+                </div>
+            </>
+            <>
+                <div id="bosque"/>
+                <div className="h-[150vh] sticky top-0 w-full">
+                    <Bosque />
+                </div>
+            </>
+            <>
+                <div id="turismo"/>
+                <div id="islas"/>
+                <div className="relative h-[100vh]">
+                    <Faro />
+                </div>
+            </>
         </div>
-        <>  
-            <div id="services" />
-            <div className="sticky top-0 h-[200vh] w-full">
-                <Services />
-            </div>
-        </>
+        {/* <div className="relative h-screen">
+  
+        </div> */}
+
+        <div className="relative h-screen">
+            <>  
+                <div id="services" />
+                <div className="sticky top-0 w-full h-[100vh] ">
+                    <Services />
+                </div>
+            </>
+        </div>
         <>
             <div id="emergency" />
-            <div className="relative min-h-screen w-full">
+            <div className=" relative min-h-[100vh] w-full bg-white">
                 <Emergency />
             </div>
         </>

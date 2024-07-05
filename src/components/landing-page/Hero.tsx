@@ -32,7 +32,7 @@ const Hero = () => {
     useEffect(() => {
   
       let controls
-      let finalPosition = -height / 2 - 8
+      let finalPosition = -height / 2 - 16
       controls = animate(xtranslation, [0, finalPosition], {
         ease: 'linear',
         duration: 25,
@@ -43,14 +43,14 @@ const Hero = () => {
     }, [xtranslation, height])
 
   return (
-    <div className="w-full h-screen">
-      <div className="max-lg:max-w-[1180px] flex justify-center mx-auto gap-12"> 
+    <div className="w-[100%] h-screen relative">
+      <div className="max-w-[1180px] flex justify-center mx-auto gap-12"> 
         <div className='h-screen w-full flex flex-col justify-center max-lg:items-center items-start relative z-10 px-4 mx-10'>
-          <div className='max-lg:text-8xl flex flex-col justify-start max-lg:items-center items-start '>
-            <h2 className='lg:text-[130px] drop-shadow-lg lg:hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold'>Islay</h2> 
-            <h2 className='lg:text-[130px] max-lg:text-center font-palanquin w-full leading-[7.5rem] text-slate-200 font-bold'><span className=' drop-shadow-lg max-lg:hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold '>Islay </span>te dá la bienvenida </h2>
+          <div className='flex flex-col justify-start max-lg:items-center items-start max-md:gap-12'>
+            <h2 className='text-7xl lg:text-[130px] drop-shadow-lg lg:hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold'>Islay</h2> 
+            <h2 className='text-6xl md:text-7xl lg:text-[130px] max-lg:text-center font-palanquin w-full md:leading-[7.5rem] text-slate-200 font-bold'><span className=' drop-shadow-lg max-lg:hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold '>Islay </span>te dá la bienvenida </h2>
           </div>
-          <p className='w-[70%] max-lg:text-center text-slate-300 text-2xl leading-10 my-12 rounded-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum officia praesentium</p>
+          <p className='w-[70%] max-lg:text-center text-slate-300 md:text-2xl leading-10 my-12 rounded-xl'>El puerto Arequipa, una puerta para conectarnos con el mundo</p>
         </div>
         <motion.div ref={ref} className='flex flex-col gap-12 px-20 items-end max-lg:hidden relative z-10' style={{y: xtranslation}}>
             {[...imgs ].map(img => <motion.div key={img} style={{backgroundImage: `url(${img})`}} className='w-[180px] h-[180px] bg-center bg-cover rounded-xl'></motion.div>)}
