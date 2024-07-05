@@ -6,10 +6,12 @@ const LayoutPage = () => {
 
   return (
     <div className='w-[100%]'>
-        {/* <NavBar /> */}
-        <div className='min-h-[100vh] md:h-[700vh]'>
+        <NavBar />
+        <div className='min-h-[100vh] md:min-h-[100vh]'>
             <Outlet />
-            <Footer />
+            <div className='w-full bg-slate-950'>
+                <Footer />
+            </div>
         </div>
         {/* <div className="relative">
             <Footer />

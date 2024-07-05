@@ -5,7 +5,7 @@ import logo from '../../assets/imgs/logo-islay-blanco.png'
 
 const Footer = () => {
   return (
-    <div className=" w-full relative z-100 h-[100%] md:h-[250px]  bg-slate-950 mt-10 text-slate-200 text-md grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-4 py-6 px-4">
+    <div className="xl:h-[100%] xl:max-w-[1920px] w-full h-[100%] lg:h-[300px] md:h-[800px] mt-10 text-slate-200 text-md grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-4 py-6 px-4 mx-auto">
         <div className="flex justify-center">
             <div className="flex flex-col gap-4 lg:items-center items-center justify-start">
                 <Link to='#home'><div style={{backgroundImage: `url(${logo})`}} className="w-[320px] h-[80px] bg-center bg-cover" /></Link>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </ul>
             </div>
         </div>
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center max-lg:mb-12">
             <div className="flex flex-col justify-start items-center text-slate-400 gap-2">
                 <h3 className="text-xl text-slate-50 font-poppins font-bold  ">Contáctanos</h3>
                 <h4 className="text-xl text-slate-100 font-montserrat max-lg:text-center">Gerencia de Desarrollo Económico</h4>
@@ -42,7 +42,6 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        {/* <p className="text-center text-slate-100">Lorem ipsum dolor sit amet consectetur adipisicing elit</p> */}
     </div>
   )
 }

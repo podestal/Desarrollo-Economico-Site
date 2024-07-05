@@ -31,16 +31,16 @@ const MainPage = () => {
                 </div>
             </>
         </div>
-        <div className="relative h-[450vh]">
+        <div className="relative min-h-screen">
             <>
                 <div id="caleta"/>
-                <div className="sticky top-0 h-[150vh] w-full">
+                <div className="sticky top-0 h-[100vh] w-full">
                     <Caleta />
                 </div>
             </>
             <>
                 <div id="bosque"/>
-                <div className="h-[150vh] sticky top-0 w-full">
+                <div className="h-[100vh] sticky top-0 w-full">
                     <Bosque />
                 </div>
             </>
@@ -66,7 +66,7 @@ const MainPage = () => {
         </div>
         <>
             <div id="emergency" />
-            <div className=" relative min-h-[100vh] w-full bg-white">
+            <div className=" relative max-xl:min-h-[100vh] w-full bg-red-500 ">
                 <Emergency />
             </div>
         </>

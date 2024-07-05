@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 
 const Services = () => {
   return (
-    <section className="w-full h-screen md:h-[100vh] bg-white ">
+    <section className="w-full xl:max-w-[1920px] lg:max-w-[1180px] mx-auto h-screen md:h-[100vh] bg-white ">
         <motion.div 
             initial={{opacity: 0, translateY: 300}}
             whileInView={{opacity: 1, translateY: 0}}

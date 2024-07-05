@@ -64,7 +64,6 @@ const NavBar = () => {
                 </div>
             </nav>
         </motion.header>
-        {/* <div className='relative'> */}
         
         {show && 
         <motion.header 
@@ -122,8 +121,6 @@ const NavBar = () => {
                 </ul>
             </nav>
         </motion.header>}
-        {/* </div> */}
-        
     </>
 
   )

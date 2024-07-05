@@ -8,8 +8,7 @@ const Hospital = () => {
   return (
     <div  className="relative h-screen bg-red-700">
         <motion.div 
-            // style={{scale: scrollYProgress, opacity: scrollYProgress}} 
-            // style={{y}}
+
             ref={container}
             initial={{opacity: 0}}
             animate={{opacity: 1}}
