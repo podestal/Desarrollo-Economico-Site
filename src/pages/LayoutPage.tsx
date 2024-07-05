@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import NavBar from "../components/landing-page/NavBar"
 import Footer from '../components/landing-page/Footer'
-// md:h-[775vh]
+
 const LayoutPage = () => {
 
   return (

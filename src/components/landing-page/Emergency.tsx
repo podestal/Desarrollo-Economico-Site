@@ -1,7 +1,7 @@
 import { RiHome3Fill, RiPhoneFill } from "@remixicon/react"
 import { Icon } from "@tremor/react"
 import {motion} from 'framer-motion'
-
+// grid grid-cols-1 lg:grid-cols-3
 const Emergency = () => {
   return (
     <section className="mx-auto w-full  bg-white min-h-screen flex flex-col justify-start items-center gap-12 p-12 my-20">

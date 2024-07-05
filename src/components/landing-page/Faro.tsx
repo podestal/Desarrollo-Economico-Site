@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion'
 import muelle from '../../assets/imgs/muelle-landing.png'
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from "react-router-hash-link"
 
 const Faro = () => {
 // className="w-full h-screen md:h-[150vh] bg-white"
@@ -29,7 +29,7 @@ const Faro = () => {
                         whileInView={{opacity: 1, translateY: 0}}
                         transition={{duration: 1.7}}
                     >
-                        <Link to='/islas'>
+                        <Link to='/islas/#islas-page'>
                             <p className="2xl:text-2xl 2xl:mx-12 text-lg text-slate-100 font-palanquin bg-sky-500 2xl:px-12 2xl:py-4 px-6 py-2 rounded-3xl cursor-pointer hover:bg-sky-400 hover:text-slate-300">Conoce más</p>
                         </Link>
                     </motion.div>
