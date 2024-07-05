@@ -38,7 +38,9 @@ const NavBar = () => {
                 <div>
                     <ul className=" max-lg:hidden flex text-center gap-12 items-center">
                         <li>
-                            <div style={{backgroundImage: `url(${logo})`}} className="w-[320px] h-[80px] bg-center bg-cover" />
+                            <Link to='/#home'>
+                                <div style={{backgroundImage: `url(${logo})`}} className="w-[320px] h-[80px] bg-center bg-cover" />
+                            </Link>
                         </li>
                         <li className="nav__item">
                             <Link to='/#home'>
@@ -77,8 +79,11 @@ const NavBar = () => {
                             initial={{opacity: 0, translateX: 200}}
                             whileInView={{opacity: 1, translateX: 0}}
                             transition={{duration: 1}}
+                            onClick={() => setShow(false)}
                         >
-                            <div style={{backgroundImage: `url(${logo})`}} className="w-[320px] h-[80px] bg-center bg-cover" />
+                            <Link to='/#home'>
+                                <div style={{backgroundImage: `url(${logo})`}} className="w-[320px] h-[80px] bg-center bg-cover" />
+                            </Link>
                         </motion.li>
                         
                         <motion.li 
