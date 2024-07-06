@@ -18,7 +18,7 @@ const Bosque = () => {
                     className="w-[1180px] flex flex-col justify-center items-center gap-10 relative z-20 mt-12 text-slate-100">
                     <div className='flex flex-col flex-1 gap-10 items-start justify-start mx-10 '>
                         <h2 className="text-6xl 2xl:text-[150px] md:text-8xl lg:text-9xl font-montserrat font-semibold text-center">Bosque de Piedras</h2>
-                        <p className="2xl:text-2xl lg:text-lg 2xl:leading-[2.5rem] text-md text-slate-300 font-poppins text-center leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae repellendus ducimus, id itaque quod provident ea quibusdam minima ipsa, cumque inventore esse rem quaerat commodi iste illum quo omnis.</p>
+                        <p className="2xl:text-2xl lg:text-lg 2xl:leading-[2.5rem] text-md text-slate-300 font-poppins text-center leading-8 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                     </div>
                     {/* to='/islas/#islas-page' */}
                     <Link to='/bosque/#bosques-page'>
@@ -27,7 +27,7 @@ const Bosque = () => {
                 </motion.div>
 
             <div className='h-screen w-full bg-center bg-cover bg-black absolute z-10 top-0 opacity-45'/>
-            <div style={{backgroundImage: `url(${bosque})`}} className=" h-screen bg-center bg-cover absolute bottom-0 right-0 w-full"></div>
+            <img src={bosque} loading='lazy' role='presentation' className=" h-screen bg-center object-cover  bg-cover absolute bottom-0 right-0 w-full" />
             </div>
         </div>
 

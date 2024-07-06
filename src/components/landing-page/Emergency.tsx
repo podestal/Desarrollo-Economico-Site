@@ -63,7 +63,7 @@ const Emergency = () => {
                         </div>
                         <div className="w-full flex max-md:flex-col justify-start items-center gap-6">
                             <Icon icon={RiPhoneFill} size="xl" color="blue"/>
-                            <p className="xl:text-2xl font-montserrat max-md:text-sm max-md:text-center">914-989450</p>
+                            <p className="xl:text-2xl font-montserrat max-md:text-sm max-md:text-center">914-989-450</p>
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="xl:h-[100%] xl:max-w-[1920px] w-full h-[100%] lg:h-[300px] md:h-[800px] text-slate-200 text-md grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-4 py-6 px-4 mx-auto z-100">
         <div className="flex justify-center">
             <div className="flex flex-col gap-4 lg:items-center items-center justify-start">
-                <Link to='#home'><div style={{backgroundImage: `url(${logo})`}} className="w-[320px] h-[80px] bg-center bg-cover" /></Link>
+                <Link to='/#home'><div style={{backgroundImage: `url(${logo})`}} className="w-[320px] h-[80px] bg-center bg-cover" /></Link>
                 <p className="font-montserrat">Islay por un mejor distrito</p>
                 <div className="flex justify-center gap-6 ">
                     <a href="https://www.facebook.com/municipalidaddistritaldeislay.matarani" target='_blank'><Icon size="lg" className="cursor-pointer" icon={RiFacebookBoxFill}/></a>

@@ -5,12 +5,12 @@ import { HashLink as Link } from "react-router-hash-link"
 const Faro = () => {
 // className="w-full h-screen md:h-[150vh] bg-white"
   return (
-    <div className="bg-white">
+    <div className="bg-white ">
             <div 
-                className="xl:max-w-[1920px] lg:max-w-[1180px] flex max-lg:flex-col justify-center items-center mx-auto gap-12  h-screen overflow-hidden"
+                className="xl:max-w-[1920px] lg:max-w-[1180px] flex max-md:flex-col justify-center items-center mx-auto gap-12 h-screen overflow-hidden"
             >
                 <div className="w-[100%] flex flex-col justify-center 2xl:items-start items-center gap-10 relative z-10 mt-12">
-                    <div className='flex flex-col gap-10 items-center justify-start px-12'>
+                    <div className='flex flex-col  gap-10 items-center justify-start px-12'>
                         <motion.h2 
                             initial={{opacity: 0, translateY: -100}}
                             whileInView={{opacity: 1, translateY: 0}}
@@ -36,7 +36,8 @@ const Faro = () => {
                 </div>
                 <div 
                     className='relative w-full flex justify-center items-center lg:m-10'>
-                    <div style={{backgroundImage: `url(${muelle})`}} className="xl:h-[700px] lg:w-full md:w-[500px] w-[300px] h-[250px] lg:h-[580px] bg-center bg-cover rounded-xl muelle-animate"></div>
+                    <img className='object-cover xl:h-[620px] lg:w-full md:w-[320px] w-[300px] h-[220px] lg:h-[580px] bg-center bg-cover rounded-xl muelle-animate' src={muelle} alt="" />
+                    {/* <div style={{backgroundImage: `url(${muelle})`}} className="xl:h-[620px] lg:w-full md:w-[500px] w-[300px] h-[220px] lg:h-[580px] bg-center bg-cover rounded-xl muelle-animate"></div> */}
                 </div>
             </div>
     </div>

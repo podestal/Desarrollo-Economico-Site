@@ -12,12 +12,12 @@ const IslasSections = ({ islaData }: Props) => {
 
   return (
 <section className='sticky top-0 h-[100vh] w-full'>
-        <div style={{backgroundImage: `url(${islaData.img})`}} className=" h-screen bg-center bg-cover bg-no-repeat absolute top-0 right-0 w-full"></div>
+        <img src={islaData.img} loading='lazy' role='presentation' className='h-screen bg-center bg-cover bg-no-repeat absolute top-0 right-0 w-full' />
         {!info && <div 
             onClick={() => setInfo(true)}
             className='flex justify-center items-start cursor-pointer w-[250px] mx-auto'>
             <div className='relative flex flex-col mt-20 pulse z-50'>
-                <h2 className='text-2xl font-bold text-blue-500 p-4 relative z-50 font-montserrat'>Info</h2>
+                <h2 className='text-2xl font-semibold text-blue-500 p-4 relative z-50 font-montserrat'>Info</h2>
             </div>
         </div>}
         {info && 

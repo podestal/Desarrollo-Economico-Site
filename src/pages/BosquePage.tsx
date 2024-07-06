@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const BosquePage = () => {
   return (
     <>
-    <div id='caleta-page'></div>
+    <div id='bosques-page'></div>
     <motion.div 
         initial={{opacity: 0, translateY: -200}}
         whileInView={{opacity: 1, translateY: 0}}
