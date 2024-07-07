@@ -49,7 +49,7 @@ const Hero = () => {
           whileInView={{opacity: 1, translateX: 0}}
           transition={{duration: 1.4}}
           className='h-screen w-full flex flex-col justify-center max-lg:items-center items-start relative z-10 px-4 mx-10'>
-          <div className='flex flex-col justify-start max-lg:items-center items-start max-md:gap-12'>
+          <div className='flex flex-col justify-start max-lg:items-center items-start max-md:gap-2'>
             <h2 className='text-7xl 2xl:text-[180px] lg:text-[130px] drop-shadow-lg bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold'>ISLAY</h2> 
             <h2 className='text-6xl md:text-7xl lg:text-[130px] 2xl:text-[180px] xl:leading-[10rem] 2xl:leading-[11rem]  max-lg:text-center font-palanquin w-full  md:leading-[7.5rem] text-slate-200 font-bold'><span className=' drop-shadow-lg max-lg:hidden hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold '>ISLAY</span> TE DA LA BIENVENIDA </h2>
           </div>

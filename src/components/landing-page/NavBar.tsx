@@ -1,4 +1,4 @@
-import {motion, useMotionValueEvent, useScroll} from 'framer-motion'
+import {motion, useMotionValueEvent, useScroll, AnimatePresence} from 'framer-motion'
 import { useState } from 'react'
 import {HashLink as Link} from 'react-router-hash-link'
 import { RiMenu2Fill } from '@remixicon/react'
@@ -34,7 +34,7 @@ const NavBar = () => {
                 setHidden(true)
                 setShow(true)}} className='text-slate-50 p-4 bg-white lg:hidden'><Icon color='blue' size='xl' icon={RiMenu2Fill}/></button>
             
-            <nav className="max-lg:hidden h-10 flex justify-start items-center xl:max-w-[1180px] max-w-[850px] mx-auto py-12 ">
+            <nav className="max-lg:hidden flex justify-start items-center xl:max-w-[1180px] max-w-[850px] mx-auto py-12 ">
                 <div>
                     <ul className=" max-lg:hidden flex text-center gap-12 items-center">
                         <li>
@@ -66,15 +66,16 @@ const NavBar = () => {
                 </div>
             </nav>
         </motion.header>
-        
-        {show && 
+        <AnimatePresence>
+                {show && 
         <motion.header 
             initial={{opacity: 0, translateY: -400}}
             whileInView={{opacity: 1, translateY: 0}}
             transition={{duration: 1}}
+            exit={{opacity: 0, translateY: -400 }}
             className='lg:hidden fixed top-0 left-0 z-50 backdrop-blur-md bg-slate-950/60  w-full h-screen'>
             <nav className="h-full flex flex-col justify-start items-center xl:max-w-[1180px] max-w-[850px] mx-auto py-12 ">
-                <ul className='w-full h-full text-white flex flex-col gap-12 items-center justify-center'>
+                <ul className='w-full h-full text-white flex flex-col items-center justify-evenly'>
                         <motion.li
                             initial={{opacity: 0, translateX: 200}}
                             whileInView={{opacity: 1, translateX: 0}}
@@ -126,6 +127,9 @@ const NavBar = () => {
                 </ul>
             </nav>
         </motion.header>}
+
+        </AnimatePresence>
+        
     </>
 
   )

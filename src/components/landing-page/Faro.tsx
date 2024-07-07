@@ -36,7 +36,7 @@ const Faro = () => {
                 </div>
                 <div 
                     className='relative w-full flex justify-center items-center lg:m-10'>
-                    <img className='object-cover xl:h-[620px] lg:w-full md:w-[320px] w-[300px] h-[220px] lg:h-[580px] bg-center bg-cover rounded-xl muelle-animate' src={muelle} alt="" />
+                    <img className='object-cover xl:h-[620px] lg:w-full md:w-[320px] w-[360px] h-[240px] lg:h-[580px] bg-center bg-cover rounded-xl muelle-animate' src={muelle} alt="" />
                     {/* <div style={{backgroundImage: `url(${muelle})`}} className="xl:h-[620px] lg:w-full md:w-[500px] w-[300px] h-[220px] lg:h-[580px] bg-center bg-cover rounded-xl muelle-animate"></div> */}
                 </div>
             </div>
