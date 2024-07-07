@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { Isla } from "../../data/data"
 import { useState } from 'react'
 
@@ -20,12 +20,14 @@ const IslasSections = ({ islaData }: Props) => {
                 <h2 className='text-2xl font-semibold text-blue-500 p-4 relative z-50 font-montserrat'>Info</h2>
             </div>
         </div>}
+        <AnimatePresence>
         {info && 
         <div className='relative w-full h-full'>
             <motion.div 
                 initial={{opacity: 0, translateY: 200}}
                 whileInView={{opacity: 0.7, translateY: 0}}
-                transition={{duration: 0.8}}
+                transition={{duration: 1}}
+                exit={{ opacity: 0, translateY: 200 }}
                 className=" bg-black opacity-70 absolute top-0 right-0 w-full z-10 text-white h-screen">
                     <motion.div 
                         initial={{opacity: 0, translateX: 200}}
@@ -38,6 +40,7 @@ const IslasSections = ({ islaData }: Props) => {
                     </motion.div>
             </motion.div>    
         </div>}
+        </AnimatePresence>
     </section>
   )
 }
