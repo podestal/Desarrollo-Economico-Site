@@ -14,7 +14,7 @@ const TouristSections = ({ caletaData }: Props) => {
   return (
     <section className='sticky top-0 h-[100vh] w-full'>
         {loading && <p>Cargando ...</p> }
-        <img src={caletaData.img} onLoad={() => setLoading(false) } loading='lazy' role='presentation' className='h-screen bg-center bg-cover bg-no-repeat absolute top-0 right-0 w-full' />
+        <img src={caletaData.img} onLoad={() => setLoading(false) } loading='lazy' role='presentation' className='h-screen object-cover  absolute top-0 right-0 w-full' />
         {!info && <div 
             onClick={() => setInfo(true)}
             className='flex justify-center items-start cursor-pointer w-[250px] mx-auto'>
