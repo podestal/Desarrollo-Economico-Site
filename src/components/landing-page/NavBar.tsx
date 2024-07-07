@@ -34,7 +34,7 @@ const NavBar = () => {
                 setHidden(true)
                 setShow(true)}} className='text-slate-50 p-4 bg-white lg:hidden'><Icon color='blue' size='xl' icon={RiMenu2Fill}/></button>
             
-            <nav className="max-lg:hidden flex justify-start items-center xl:max-w-[1180px] max-w-[850px] mx-auto py-12 ">
+            <nav className="max-lg:hidden flex justify-start items-center xl:max-w-[1180px] max-w-[850px] mx-auto py-12 lg:h-[120px] ">
                 <div>
                     <ul className=" max-lg:hidden flex text-center gap-12 items-center">
                         <li>
@@ -48,17 +48,17 @@ const NavBar = () => {
                             </Link>
                         </li>
                         <li className="nav__item">
-                            <Link to='#services'>
+                            <Link to='/#services'>
                                 <p className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Servicios</p>
                             </Link>
                         </li>
                         <li className="nav__item">
-                            <Link to='#emergency'>
+                            <Link to='/#emergency'>
                                 <p className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Emergencia</p>
                             </Link>
                         </li>
                         <li className="nav__item">
-                            <Link to='#turismo'>
+                            <Link to='/#turismo'>
                                 <p className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  hover:pb-2 text-xl font-montserrat font-bold`}>Turismo</p>
                             </Link>
                         </li>
@@ -101,7 +101,7 @@ const NavBar = () => {
                             whileInView={{opacity: 1, translateX: 0}}
                             transition={{duration: 1}}
                             className="nav__item" onClick={() => setShow(false)}>
-                            <Link to='#services'>
+                            <Link to='/#services'>
                                 <p className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  pb-2 text-xl font-montserrat font-bold`}>Servicios</p>
                             </Link>
                         </motion.li>
@@ -110,7 +110,7 @@ const NavBar = () => {
                             whileInView={{opacity: 1, translateX: 0}}
                             transition={{duration: 1}}
                             className="nav__item" onClick={() => setShow(false)}>
-                            <Link to='#emergency'>
+                            <Link to='/#emergency'>
                                 <p className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  pb-2 text-xl font-montserrat font-bold`}>Emergencia</p>
                             </Link>
                         </motion.li>
@@ -119,7 +119,7 @@ const NavBar = () => {
                             whileInView={{opacity: 1, translateX: 0}}
                             transition={{duration: 1}}
                             className="nav__item" onClick={() => setShow(false)}>
-                            <Link to='#turismo'>
+                            <Link to='/#turismo'>
                                 <p className={`text-slate-100 hover:text-slate-200 hover:border-b-2 hover:border-b-slate-300  pb-2 text-xl font-montserrat font-bold`}>Turismo</p>
                             </Link>
                         </motion.li>
