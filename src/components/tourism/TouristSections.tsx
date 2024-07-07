@@ -7,11 +7,14 @@ interface Props {
 }
 
 const TouristSections = ({ caletaData }: Props) => {
+
     const [info, setInfo] = useState(false)
+    const [loading, setLoading] = useState(true)
     
   return (
     <section className='sticky top-0 h-[100vh] w-full'>
-        <img src={caletaData.img} loading='lazy' role='presentation' className='h-screen bg-center bg-cover bg-no-repeat absolute top-0 right-0 w-full' />
+        {loading && <p>Cargando ...</p> }
+        <img src={caletaData.img} onLoad={() => setLoading(false) } loading='lazy' role='presentation' className='h-screen bg-center bg-cover bg-no-repeat absolute top-0 right-0 w-full' />
         {!info && <div 
             onClick={() => setInfo(true)}
             className='flex justify-center items-start cursor-pointer w-[250px] mx-auto'>
@@ -32,10 +35,10 @@ const TouristSections = ({ caletaData }: Props) => {
                             initial={{opacity: 0, translateX: 200}}
                             whileInView={{opacity: 0.7, translateX: 0}}
                             transition={{duration: 2}}
-                            className='relative z-50 flex flex-col m-8 justify-center items-center w-[380px] mx-auto md:w-[560px] lg:w-[880px] xl:w-[1180px]'>
-                            <button className='mb-10 ' onClick={() => setInfo(false)}><p className='text-4xl'>X</p></button>
-                            <h3 className='max-lg:text-6xl text-8xl mb-10'>{caletaData.title}</h3>
-                            <p className='max-lg:text-lg text-center text-2xl leading-[2.8rem]'>{caletaData.content}</p>  
+                            className='relative z-40 flex flex-col m-8 justify-center items-center w-[380px] mx-auto md:w-[560px] lg:w-[880px] xl:w-[1180px]'>
+                            <button className='mb-10 ' onClick={() => setInfo(false)}><p className='text-blue-500 hover:text-blue-400 font-bold text-4xl'>X</p></button>
+                            <h3 className='z-50 max-lg:text-6xl text-8xl mb-10'>{caletaData.title}</h3>
+                            <p className='max-lg:text-lg text-center text-2xl leading-[2.8rem] '>{caletaData.content}</p>  
                         </motion.div>
                 </motion.div>    
             </div>}

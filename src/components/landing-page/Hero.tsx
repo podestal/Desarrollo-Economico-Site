@@ -43,7 +43,7 @@ const Hero = () => {
 
   return (
     <div className="w-[100%] h-screen relative">
-      <div className="max-w-[1180px] xl:max-w-[1920px] flex justify-center mx-auto gap-12"> 
+      <div className="lg:max-w-[660px] xl:max-w-[1180px] 2xl:max-w-[1920px] flex justify-center mx-auto gap-12"> 
         <motion.div 
           initial={{opacity: 0, translateX: -100}}
           whileInView={{opacity: 1, translateX: 0}}
