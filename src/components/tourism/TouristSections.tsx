@@ -37,8 +37,8 @@ const TouristSections = ({ caletaData }: Props) => {
                             transition={{duration: 2}}
                             className='relative z-40 flex flex-col m-8 justify-center items-center w-[380px] mx-auto md:w-[560px] lg:w-[880px] xl:w-[1180px]'>
                             <button className='mb-10 ' onClick={() => setInfo(false)}><p className='text-blue-500 hover:text-blue-400 font-bold text-4xl'>X</p></button>
-                            <h3 className='z-50 max-lg:text-6xl text-8xl mb-10'>{caletaData.title}</h3>
-                            <p className='max-lg:text-lg text-center text-2xl leading-[2.8rem] '>{caletaData.content}</p>  
+                            <h3 className='z-50 max-lg:text-6xl text-8xl mb-10 text-center'>{caletaData.title}</h3>
+                            <p className='max-lg:text-lg text-left  text-2xl leading-[2.8rem] '>{caletaData.content}</p>  
                         </motion.div>
                 </motion.div>    
             </div>}
