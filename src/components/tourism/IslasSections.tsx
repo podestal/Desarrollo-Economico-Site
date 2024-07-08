@@ -36,8 +36,8 @@ const IslasSections = ({ islaData }: Props) => {
                         className='relative z-50 flex flex-col m-8 justify-center items-center w-[380px] mx-auto md:w-[560px] lg:w-[880px] xl:w-[1180px]'>
                         <button className='mb-10 ' onClick={() => setInfo(false)}><p className='text-4xl'>X</p></button>
                         <h3 className='max-lg:text-6xl text-8xl mb-10'>{islaData.title}</h3>
-                        <p className='max-lg:text-lg text-left text-2xl leading-[2.8rem]'>{islaData.content}</p>  
-                        <p className='max-lg:text-lg text-left text-2xl leading-[2.8rem] mt-6'>{islaData.contentS}</p>  
+                        <p className='max-lg:text-lg text-left text-2xl leading-[2.8rem] mx-2'>{islaData.content}</p>  
+                        <p className='max-lg:text-lg text-left text-2xl leading-[2.8rem] mt-6 mx-2'>{islaData.contentS}</p>  
                     </motion.div>
             </motion.div>    
         </div>}
