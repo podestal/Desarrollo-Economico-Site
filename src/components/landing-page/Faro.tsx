@@ -1,9 +1,13 @@
 import {motion} from 'framer-motion'
 import muelle from '../../assets/imgs/muelle-landing.png'
+import muelles from '../../assets/imgs/muelle-landing-s.png'
 import { HashLink as Link } from "react-router-hash-link"
+import { useState } from 'react'
 
 const Faro = () => {
-// className="w-full h-screen md:h-[150vh] bg-white"
+
+    const [loading, setLoading] = useState(true)
+
   return (
     <div className="bg-white ">
             <div 
@@ -36,7 +40,8 @@ const Faro = () => {
                 </div>
                 <div 
                     className='relative w-full flex justify-center items-center lg:m-10'>
-                    <img className='object-cover xl:h-[620px] lg:w-full md:w-[320px] w-[360px] h-[240px] lg:h-[580px] bg-center bg-cover rounded-xl muelle-animate' src={muelle} alt="" />
+                     {loading && <img src={muelles} loading='lazy' role='presentation' className='h-screen object-cover  absolute top-0 right-0 w-full z-20' /> }
+                    <img className='object-cover xl:h-[620px] lg:w-full md:w-[320px] w-[360px] h-[240px] lg:h-[580px] bg-center bg-cover rounded-xl muelle-animate' loading='lazy' onLoad={() => setLoading(false)} src={muelle} alt="" />
                     {/* <div style={{backgroundImage: `url(${muelle})`}} className="xl:h-[620px] lg:w-full md:w-[500px] w-[300px] h-[220px] lg:h-[580px] bg-center bg-cover rounded-xl muelle-animate"></div> */}
                 </div>
             </div>

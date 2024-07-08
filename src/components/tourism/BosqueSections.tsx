@@ -9,10 +9,12 @@ interface Props {
 const BosqueSections = ({ bosqueData }: Props) => {
 
     const [info, setInfo] = useState(false)
+    const [loading, setLoading] = useState(true)
 
   return (
     <section className='sticky top-0 h-[100vh] w-full'>
-        <img src={bosqueData.img} loading='lazy' role='presentation' className=' h-full object-cover absolute top-0 right-0 w-full' />
+        {loading && <img src={bosqueData.preImg} loading='lazy' role='presentation' className='h-screen object-cover  absolute top-0 right-0 w-full z-20' /> }
+        <img src={bosqueData.img} onLoad={() => setLoading(false) }  loading='lazy' role='presentation' className='h-screen object-cover  absolute top-0 right-0 w-full' />
         {!info && <div 
             onClick={() => setInfo(true)}
             className='flex justify-center items-start cursor-pointer w-[250px] mx-auto'>

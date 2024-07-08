@@ -1,8 +1,12 @@
 import {motion} from 'framer-motion'
 import { HashLink as Link } from 'react-router-hash-link'
 import bosque from '../../assets/imgs/piedras-landing.png'
+import bosques from '../../assets/imgs/piedras-landing-s.png'
+import { useState } from 'react'
 
 const Bosque = () => {
+
+    const [loading, setLoading] = useState(true)
 
   return (
 
@@ -27,7 +31,8 @@ const Bosque = () => {
                 </motion.div>
 
             <div className='h-screen w-full bg-center bg-cover bg-black absolute z-10 top-0 opacity-45'/>
-            <img src={bosque} loading='lazy' role='presentation' className=" h-screen bg-center object-cover  bg-cover absolute bottom-0 right-0 w-full" />
+                {loading && <img src={bosques} loading='lazy' role='presentation' className='h-screen object-cover  absolute top-0 right-0 w-full z-20' /> }
+                <img src={bosque} onLoad={() => setLoading(false)} loading='lazy' role='presentation' className=" h-screen bg-center object-cover  bg-cover absolute bottom-0 right-0 w-full" />
             </div>
         </div>
 

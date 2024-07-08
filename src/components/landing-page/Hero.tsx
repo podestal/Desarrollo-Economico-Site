@@ -16,8 +16,9 @@ import c15 from '../../assets/imgs/c15.png'
 import c16 from '../../assets/imgs/c16.png'
 import wave from '../../assets/imgs/wave.png'
 import heroMobile from '../../assets/imgs/hero-mobile.png'
+import heroMobiles from '../../assets/imgs/hero-mobile-s.png'
 import { animate, motion, useMotionValue } from 'framer-motion'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import useMeasure from 'react-use-measure'
 
 const imgs = [
@@ -29,6 +30,7 @@ const Hero = () => {
     let [ref, {height}] = useMeasure()
 
     const xtranslation = useMotionValue(0)
+    const [loading, setLoading] = useState(true)
   
     useEffect(() => {
   
@@ -61,7 +63,8 @@ const Hero = () => {
         </motion.div>
       </div>
         <div className='absolute top-0 w-full h-full bg-black z-20 opacity-60 lg:hidden'/>
-        <img src={heroMobile} className='h-full w-full absolute top-0 z-10 lg:hidden object-cover' />
+        {loading && <img src={heroMobiles} loading='lazy' role='presentation' className='h-screen object-cover  absolute top-0 right-0 w-full z-20' /> }
+        <img src={heroMobile} className='h-full w-full absolute top-0 z-10 lg:hidden object-cover' loading='lazy' onLoad={() => setLoading(false)} />
         <div style={{backgroundImage: `url(${wave})`, backgroundSize: '1000px 100px'}} className='absolute bottom-0 left-0 w-[100%] h-[100px] wave1'></div>
         <div style={{backgroundImage: `url(${wave})`, backgroundSize: '1000px 100px'}} className='absolute bottom-0 left-0 w-[100%] h-[100px] wave2'></div>
         <div style={{backgroundImage: `url(${wave})`, backgroundSize: '1000px 100px'}} className='absolute bottom-0 left-0 w-[100%] h-[100px] wave3'></div>
