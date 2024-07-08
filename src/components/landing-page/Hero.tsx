@@ -14,6 +14,22 @@ import c13 from '../../assets/imgs/c13.png'
 import c14 from '../../assets/imgs/c14.png'
 import c15 from '../../assets/imgs/c15.png'
 import c16 from '../../assets/imgs/c16.png'
+import c1s from '../../assets/imgs/c1-s.png'
+import c2s from '../../assets/imgs/c2-s.png'
+import c3s from '../../assets/imgs/c3-s.png'
+import c4s from '../../assets/imgs/c4-s.png'
+import c5s from '../../assets/imgs/c5-s.png'
+import c6s from '../../assets/imgs/c6-s.png'
+import c7s from '../../assets/imgs/c7-s.png'
+import c8s from '../../assets/imgs/c8-s.png'
+import c9s from '../../assets/imgs/c9-s.png'
+import c10s from '../../assets/imgs/c10-s.png'
+import c11s from '../../assets/imgs/c11-s.png'
+import c12s from '../../assets/imgs/c12-s.png'
+import c13s from '../../assets/imgs/c13-s.png'
+import c14s from '../../assets/imgs/c14-s.png'
+import c15s from '../../assets/imgs/c15-s.png'
+import c16s from '../../assets/imgs/c16-s.png'
 import wave from '../../assets/imgs/wave.png'
 import heroMobile from '../../assets/imgs/hero-mobile.png'
 import heroMobiles from '../../assets/imgs/hero-mobile-s.png'
@@ -22,7 +38,71 @@ import { useEffect, useState } from 'react'
 import useMeasure from 'react-use-measure'
 
 const imgs = [
-    c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16
+  {
+    img: c1,
+    imgLoading: c1s
+  },
+  {
+    img: c2,
+    imgLoading: c2s
+  },
+  {
+    img: c3,
+    imgLoading: c3s
+  },
+  {
+    img: c4,
+    imgLoading: c4s
+  },
+  {
+    img: c5,
+    imgLoading: c5s
+  },
+  {
+    img: c6,
+    imgLoading: c6s
+  },
+  {
+    img: c7,
+    imgLoading: c7s
+  },
+  {
+    img: c8,
+    imgLoading: c8s
+  },
+  {
+    img: c9,
+    imgLoading: c9s
+  },
+  {
+    img: c10,
+    imgLoading: c10s
+  },
+  {
+    img: c11,
+    imgLoading: c11s
+  },
+  {
+    img: c12,
+    imgLoading: c12s
+  },
+  {
+    img: c13,
+    imgLoading: c13s
+  },
+  {
+    img: c14,
+    imgLoading: c14s
+  },
+  {
+    img: c15,
+    imgLoading: c15s
+  },
+  {
+    img: c16,
+    imgLoading: c16s
+  },
+
 ]
 
 const Hero = () => {
@@ -31,6 +111,7 @@ const Hero = () => {
 
     const xtranslation = useMotionValue(0)
     const [loading, setLoading] = useState(true)
+    const [carouselLoading, setCarouselLoading] = useState(true)
   
     useEffect(() => {
   
@@ -58,12 +139,18 @@ const Hero = () => {
           </div>
           <p className='w-[70%] max-lg:text-center text-slate-300 md:text-2xl 2xl:text-4xl leading-10 my-12 xl:my-20 rounded-xl font-poppins'>El puerto de Arequipa, una puerta para conectarnos con el mundo</p>
         </motion.div>
-        <motion.div ref={ref} className='flex flex-col gap-12 px-20 items-end max-lg:hidden relative z-10' style={{y: xtranslation}}>
-            {[...imgs ].map(img => <motion.div key={img} style={{backgroundImage: `url(${img})`}} className='w-[180px] h-[180px] 2xl:w-[300px] 2xl:h-[300px] bg-center bg-cover rounded-xl'></motion.div>)}
+        <motion.div ref={ref} className='flex flex-col gap-12 mx-10 items-end max-lg:hidden relative z-10' style={{y: xtranslation}}>
+            {/* {[...imgs ].map(img => <motion.div key={img.img} style={{backgroundImage: `url(${img.img})`}} className='w-[180px] h-[180px] 2xl:w-[300px] 2xl:h-[300px] bg-center bg-cover rounded-xl'></motion.div>)} */}
+            {[...imgs ].map(img => 
+              <>
+                {carouselLoading && <motion.img key={img.imgLoading} src={img.imgLoading} className='w-[180px] h-[140px] 2xl:w-[300px] 2xl:h-[260px] object-cover rounded-xl' />}
+                <motion.img loading='lazy' onLoad={() => setCarouselLoading(false)} key={img.img} src={img.img} className='w-[180px] h-[140px] 2xl:w-[300px] 2xl:h-[260px] object-cover rounded-xl' />
+              </>
+              )}
         </motion.div>
       </div>
         <div className='absolute top-0 w-full h-full bg-black z-20 opacity-60 lg:hidden'/>
-        {loading && <img src={heroMobiles} loading='lazy' role='presentation' className='h-screen object-cover  absolute top-0 right-0 w-full z-20' /> }
+        {loading && <img src={heroMobiles} loading='lazy' role='presentation' className='lg:hidden h-screen object-cover  absolute top-0 right-0 w-full z-20' /> }
         <img src={heroMobile} className='h-full w-full absolute top-0 z-10 lg:hidden object-cover' loading='lazy' onLoad={() => setLoading(false)} />
         <div style={{backgroundImage: `url(${wave})`, backgroundSize: '1000px 100px'}} className='absolute bottom-0 left-0 w-[100%] h-[100px] wave1'></div>
         <div style={{backgroundImage: `url(${wave})`, backgroundSize: '1000px 100px'}} className='absolute bottom-0 left-0 w-[100%] h-[100px] wave2'></div>
