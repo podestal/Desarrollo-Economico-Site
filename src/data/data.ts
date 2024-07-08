@@ -1,7 +1,11 @@
 import caleta1 from '../assets/imgs/caleta/caleta1.png'
+import caleta1s from '../assets/imgs/caleta/caleta1-s.png'
 import caleta2 from '../assets/imgs/caleta/caleta2.png'
+import caleta2s from '../assets/imgs/caleta/caleta2-s.png'
 import caleta3 from '../assets/imgs/caleta/caleta3.png'
+import caleta3s from '../assets/imgs/caleta/caleta3-s.png'
 import caleta4 from '../assets/imgs/caleta/caleta4.png'
+import caleta4s from '../assets/imgs/caleta/caleta4-s.png'
 
 import bosque1 from '../assets/imgs/bosque/bosque1.png'
 import bosque2 from '../assets/imgs/bosque/bosque2.png'
@@ -15,6 +19,7 @@ import islas4 from '../assets/imgs/islas/islas4.png'
 
 export interface Caleta {
     img: string,
+    preImg: string
     title: string,
     content: string
 }
@@ -22,19 +27,23 @@ export interface Caleta {
 export const caletasData = [
     {
         img: caleta1,
+        preImg: caleta1s,
         title: 'Joyas Costeras',
         content: 'Las caletas en Islay-Matarani, son joyas costeras que no solo destacan por su belleza natural, sino que también son fundamentales para la vida económica y cultural de la región. Estas pequeñas bahías, como la Caleta San José y la Caleta Honoratos, ofrecen un ambiente pintoresco y tranquilo donde las embarcaciones pesqueras encuentran resguardo y los pescadores locales realizan sus labores diarias de pesca artesanal. La actividad pesquera en las caletas es crucial para la economía local, proporcionando sustento a muchas familias y contribuyendo significativamente a la identidad económica de Islay-Matarani.',
     },
     {
         img: caleta2,
+        preImg: caleta2s,
         title: 'Rica Biodiversidad',
         content: 'Además de su importancia económica, las caletas son lugares de gran biodiversidad marina. Sus aguas albergan una variada fauna que incluye desde peces y crustáceos hasta mamíferos marinos como lobos marinos y delfines. Esto no solo sustenta la pesca local, sino que también convierte a las caletas en destinos populares para ecoturistas y amantes de la naturaleza que buscan experiencias de observación de fauna marina en su hábitat natural.',
     },{
         img: caleta3,
+        preImg: caleta3s,
         title: 'Relatos del Mar',
         content: 'Culturalmente, las caletas son puntos de encuentro social y comunitario. Aquí, los pescadores intercambian historias y conocimientos sobre el mar, mientras que las festividades locales y tradiciones celebran la conexión profunda de la comunidad con el océano. Este aspecto cultural se refleja en la gastronomía local, donde los productos del mar frescos de las caletas son la base de platos tradicionales que capturan el espíritu y la historia marítima de la región.',
     },{
         img: caleta4,
+        preImg: caleta4s,
         title: 'Economía Sustentable',
         content: 'Las caletas también son importantes para la conservación y el manejo sostenible de los recursos marinos. Las comunidades locales están comprometidas con prácticas de pesca responsables y la preservación del entorno marino, asegurando que las generaciones futuras puedan disfrutar de los beneficios económicos y culturales que estas caletas proporcionan.',
     },
