@@ -18,7 +18,7 @@
 .wave1 {
   animation: animate 20s linear infinite;
   z-index: 500;
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 @keyframes animate {
@@ -33,9 +33,9 @@
 }
 
 .wave2 {
-  animation: animate2 15s linear infinite;
+  animation: animate2 10s linear infinite;
   z-index: 1000;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 @keyframes animate2 {
@@ -66,10 +66,10 @@
   }
 }
 
-.wave3 {
-  animation: animate3 10s linear infinite;
+.wave4 {
+  animation: animate3 15s linear infinite;
   z-index: 2;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 @keyframes animate3 {
@@ -141,7 +141,7 @@
 
 @keyframes pulse {
   100% {
-    transform: scale(1.6);
+    transform: scale(1.4);
   }
 }
 

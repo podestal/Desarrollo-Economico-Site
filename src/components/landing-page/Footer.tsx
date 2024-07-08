@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex justify-center">
             <div className="flex flex-col gap-4 lg:items-center items-center justify-start">
                 <Link to='/#home'><div style={{backgroundImage: `url(${logo})`}} className="w-[320px] h-[80px] bg-center bg-cover" /></Link>
-                <p className="font-montserrat">Islay por un mejor distrito</p>
+                <p className="font-montserrat">Islay, por un mejor distrito</p>
                 <div className="flex justify-center gap-6 ">
                     <a href="https://www.facebook.com/municipalidaddistritaldeislay.matarani" target='_blank'><Icon size="lg" className="cursor-pointer" icon={RiFacebookBoxFill}/></a>
                     <a href="https://www.instagram.com/muni_islay?igsh=MzNlNGNkZWQ4Mg==" target='_blank'><Icon size="lg" className="cursor-pointer" icon={RiInstagramFill}/></a>

@@ -51,10 +51,10 @@ const Hero = () => {
           transition={{duration: 1.4}}
           className='h-screen w-full flex flex-col justify-center max-lg:items-center items-start relative z-30 px-4 mx-10'>
           <div className='flex flex-col justify-start max-lg:items-center items-start max-md:gap-2'>
-            <h2 className='text-7xl 2xl:text-[180px] lg:text-[130px] drop-shadow-lg bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold'>ISLAY</h2> 
-            <h2 className='text-6xl md:text-7xl lg:text-[130px] 2xl:text-[180px] xl:leading-[10rem] 2xl:leading-[11rem]  max-lg:text-center font-palanquin w-full  max-lg:leading-[5.5rem] text-slate-200 font-bold'><span className=' drop-shadow-lg max-lg:hidden hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold '>ISLAY</span> TE DA LA BIENVENIDA </h2>
+            <h2 className='text-7xl md:text-8xl 2xl:text-[180px] lg:text-[130px] mb-6 drop-shadow-lg bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold'>ISLAY</h2> 
+            <h2 className='text-5xl md:text-6xl lg:text-[110px] 2xl:text-[160px] xl:leading-[7.5rem] 2xl:leading-[11rem]  max-lg:text-center font-palanquin w-full  max-lg:leading-[3.5rem] text-slate-200'><span className=' drop-shadow-lg max-lg:hidden hidden bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent font-bold '>ISLAY</span> TE DA LA BIENVENIDA </h2>
           </div>
-          <p className='w-[70%] max-lg:text-center text-slate-300 md:text-2xl 2xl:text-4xl leading-10 my-12 xl:my-20 rounded-xl font-poppins'>El puerto Arequipa, una puerta para conectarnos con el mundo</p>
+          <p className='w-[70%] max-lg:text-center text-slate-300 md:text-2xl 2xl:text-4xl leading-10 my-12 xl:my-20 rounded-xl font-poppins'>El puerto de Arequipa, una puerta para conectarnos con el mundo</p>
         </motion.div>
         <motion.div ref={ref} className='flex flex-col gap-12 px-20 items-end max-lg:hidden relative z-10' style={{y: xtranslation}}>
             {[...imgs ].map(img => <motion.div key={img} style={{backgroundImage: `url(${img})`}} className='w-[180px] h-[180px] 2xl:w-[300px] 2xl:h-[300px] bg-center bg-cover rounded-xl'></motion.div>)}

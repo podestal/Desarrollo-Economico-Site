@@ -26,7 +26,7 @@ const MainPage = () => {
         <div className="relative h-screen">
             <>
                 <div id="home" />
-                <div className="sticky top-0 bg-blue-500  max-h-screen">
+                <div className="sticky top-0 bg-gradient-to-t from-blue-900 to-sky-400 max-h-screen">
                     <Hero />
                 </div>
             </>

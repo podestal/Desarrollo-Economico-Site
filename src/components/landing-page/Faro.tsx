@@ -15,13 +15,13 @@ const Faro = () => {
                             initial={{opacity: 0, translateY: -100}}
                             whileInView={{opacity: 1, translateY: 0}}
                             transition={{duration: 1.6}}
-                            className="text-5xl md:text-8xl lg:text-9xl 2xl:text-[150px] max-lg:text-center font-montserrat font-semibold">Islas Albizuri
+                            className="text-5xl md:text-8xl lg:text-9xl 2xl:text-[150px] text-center font-montserrat font-semibold">Islas Albizuri
                         </motion.h2>
                         <motion.p 
                             initial={{opacity: 0, translateY: -100}}
                             whileInView={{opacity: 1, translateY: 0}}
                             transition={{duration: 1.7}}
-                            className="text-md lg:text-xl 2xl:text-2xl 2xl:leading-[2.6rem] font-poppins max-lg:text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestiae
+                            className="text-md lg:text-xl 2xl:text-2xl 2xl:leading-[2.6rem] font-poppins text-left">Un Paraíso Natural
                         </motion.p>
                     </div>
                     <motion.div
