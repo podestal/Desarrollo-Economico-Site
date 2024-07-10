@@ -38,7 +38,7 @@ const BosqueSections = ({ bosqueData }: Props) => {
                         className='relative z-50 flex flex-col m-8 justify-center items-center w-[380px] mx-auto md:w-[560px] lg:w-[880px] xl:w-[1180px]'>
                         <button className='mb-10 ' onClick={() => setInfo(false)}><p className='text-4xl'>X</p></button>
                         <h3 className='max-lg:text-6xl text-8xl mb-10 text-center mx-2'>{bosqueData.title}</h3>
-                        <p className='max-lg:text-lg max-lg:leading-[2rem] text-left  text-2xl leading-[2.8rem] mx-2'>{bosqueData.content}</p>  
+                        <p className='max-lg:text-lg max-lg:leading-[2rem] text-center text-2xl leading-[2.8rem] mx-2'>{bosqueData.content}</p>  
                     </motion.div>
             </motion.div>    
         </div>}
